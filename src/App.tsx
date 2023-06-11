@@ -7,7 +7,7 @@ import { MyWork } from "./components/MyWork";
 import { Navbar } from "./components/Navbar";
 import { Skills } from "./components/Skills";
 
-export const App = () => {
+export const App: React.FC = () => {
   return (
     <Router>
       <Navbar />

@@ -1,3 +1,3 @@
 export const Home: React.FC = () => {
-  return <div>Home</div>;
+  return <h1>Hello ! My name is Bocanel Valerica , this is my portfolio</h1>;
 };

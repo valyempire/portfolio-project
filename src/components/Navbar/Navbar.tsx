@@ -1,63 +1,5 @@
-// import { useState } from "react";
-// import { Link } from "react-router-dom";
-
-// export const Navbar: React.FC = () => {
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-//   const toggleMenu = () => {
-//     setIsMenuOpen(!isMenuOpen);
-//   };
-
-//   return (
-//     <nav>
-//       <div className="navbar-container">
-//         <Link to="/" className="navbar-logo">
-//           Your Logo
-//         </Link>
-//         <div
-//           className={`navbar-menu ${isMenuOpen ? "open" : ""}`}
-//           onClick={toggleMenu}
-//         >
-//           <div className="menu-icon">
-//             <div className="icon-line"></div>
-//             <div className="icon-line"></div>
-//             <div className="icon-line"></div>
-//           </div>
-//         </div>
-//         <ul className={`navbar-links ${isMenuOpen ? "open" : ""}`}>
-//           <li>
-//             <Link to="/" onClick={toggleMenu}>
-//               Home
-//             </Link>
-//           </li>
-//           <li>
-//             <Link to="/about" onClick={toggleMenu}>
-//               About Me
-//             </Link>
-//           </li>
-//           <li>
-//             <Link to="/work" onClick={toggleMenu}>
-//               My Work
-//             </Link>
-//           </li>
-//           <li>
-//             <Link to="/skills" onClick={toggleMenu}>
-//               Skills
-//             </Link>
-//           </li>
-//           <li>
-//             <Link to="/contact" onClick={toggleMenu}>
-//               Contact
-//             </Link>
-//           </li>
-//         </ul>
-//       </div>
-//     </nav>
-//   );
-// };
-
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   NavbarContainer,
   NavbarWrapper,
@@ -66,7 +8,7 @@ import {
   Menu,
 } from "./Navbar.styles";
 
-export const Navbar = () => {
+export const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -76,7 +18,7 @@ export const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarWrapper>
-        <Logo to="/">Your Logo</Logo>
+        <Logo to="/">Bocanel Valerica</Logo>
         <Menu onClick={toggleMenu}>
           <div className="icon-line"></div>
           <div className="icon-line"></div>
@@ -84,29 +26,54 @@ export const Navbar = () => {
         </Menu>
         <Links className={isMenuOpen ? "open" : ""}>
           <li>
-            <Link to="/" onClick={toggleMenu}>
+            <NavLink
+              exact
+              activeClassName="active-link"
+              to="/"
+              onClick={toggleMenu}
+            >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/about" onClick={toggleMenu}>
+            <NavLink
+              exact
+              activeClassName="active-link"
+              to="/about"
+              onClick={toggleMenu}
+            >
               About Me
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/work" onClick={toggleMenu}>
+            <NavLink
+              exact
+              activeClassName="active-link"
+              to="/work"
+              onClick={toggleMenu}
+            >
               My Work
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/skills" onClick={toggleMenu}>
+            <NavLink
+              exact
+              activeClassName="active-link"
+              to="/skills"
+              onClick={toggleMenu}
+            >
               Skills
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact" onClick={toggleMenu}>
+            <NavLink
+              exact
+              activeClassName="active-link"
+              to="/contact"
+              onClick={toggleMenu}
+            >
               Contact
-            </Link>
+            </NavLink>
           </li>
         </Links>
       </NavbarWrapper>
