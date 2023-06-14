@@ -1,4 +1,5 @@
 import { useRef } from "react";
+// import contact_img from "../../assets/—Pngtree—internet mobile technology poster_393602.jpg";
 
 /**
  * External imports
@@ -8,7 +9,17 @@ import emailjs from "@emailjs/browser";
 /**
  * Imports styles
  */
-import { ContactForm, SubmitButton, ContactInput } from "./Contact.style";
+import {
+  PageContainer,
+  ContactFormContainer,
+  ContentContainer,
+  Paragraph,
+  Title,
+  Input,
+  Textarea,
+  SubmitButton,
+  Container,
+} from "./Contact.style";
 
 /**
  * Displays the component
@@ -48,31 +59,32 @@ export const Contact: React.FC = () => {
 
   return (
     <section>
-      <div>
-        <h2>Contact Us</h2>
-        <ContactForm ref={form} onSubmit={sendEmail}>
-          <ContactInput
-            type="text"
-            placeholder="Full Name"
-            name="user_name"
-            required
-          />
-          <ContactInput
-            type="email"
-            placeholder="Email"
-            name="user_email"
-            required
-          />
-          <ContactInput
-            type="text"
-            placeholder="Subject"
-            name="subject"
-            required
-          />
-          <textarea name="message"></textarea>
+      <PageContainer>
+        <ContentContainer>
+          <Title>Contact Me</Title>
+          <Paragraph>Get in Touch</Paragraph>
+          <Paragraph>Email: bocanel.valerica92@gmail.com</Paragraph>
+          <Paragraph>Phone: (+4) 0741412636 </Paragraph>
+        </ContentContainer>
+        <ContactFormContainer ref={form} onSubmit={sendEmail}>
+          <Container>
+            <Input
+              type="text"
+              placeholder="Full Name"
+              name="user_name"
+              required
+            />
+            <Input
+              type="email"
+              placeholder="Email"
+              name="user_email"
+              required
+            />
+          </Container>
+          <Textarea placeholder="Message" name="message"></Textarea>
           <SubmitButton type="submit">Send Message</SubmitButton>
-        </ContactForm>
-      </div>
+        </ContactFormContainer>
+      </PageContainer>
     </section>
   );
 };

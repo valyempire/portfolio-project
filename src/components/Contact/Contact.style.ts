@@ -3,39 +3,96 @@
  */
 import { styled } from "@mui/system";
 
-/**
- * Styles the Contact Form
- */
-export const ContactForm = styled("form")(() => {
+export const PageContainer = styled("div")(() => {
+  return {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    // minHeight: "100vh",
+    backgroundColor: "#012867",
+  };
+});
+
+export const ContentContainer = styled("div")(({ theme }) => {
+  return {
+    margin: theme.spacing(2),
+    alignSelf: "center",
+    textAlign: "left", // Align the text to the left
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
+    marginRight: 85,
+  };
+});
+
+export const Title = styled("h2")(() => {
+  return {
+    fontSize: 38,
+    fontWeight: "bold",
+    marginBottom: 10,
+    marginLeft: 33,
+    color: "azure",
+  };
+});
+
+export const Paragraph = styled("p")(() => {
+  return {
+    fontSize: 23,
+    color: "azure",
+    marginLeft: 36,
+  };
+});
+
+export const ContactFormContainer = styled("form")(() => {
   return {
     display: "flex",
     flexDirection: "column",
-    maxWidth: 400,
-    margin: "0 auto",
   };
 });
 
-/**
- * Styles the Contact Input
- */
-export const ContactInput = styled("input")(({ theme }) => {
+export const Textarea = styled("textarea")(({ theme }) => {
   return {
+    padding: 10,
+    margin: "0 5px",
+    borderRadius: 4,
+    fontSize: 14,
+    minHeight: 40,
+    resize: "vertical",
     marginBottom: theme.spacing(2),
+    height: 186,
+    width: 496,
   };
 });
 
-/**
- * Styles the Submit Button
- */
-export const SubmitButton = styled("button")(() => {
+export const SubmitButton = styled("button")(() => ({
+  padding: "10px 20px",
+  backgroundColor: "#fefefe",
+  color: "#0033a1",
+  border: "none",
+  borderRadius: 4,
+  fontSize: 16,
+  cursor: "pointer",
+  marginLeft: 6,
+  "&:hover": {
+    backgroundColor: "#002a6d",
+    color: "#f9fcf8",
+    border: "1px solid white",
+  },
+}));
+
+export const Input = styled("input")(() => {
   return {
-    backgroundColor: "#007cb9",
-    color: "#fff",
-    padding: "10px 20px",
-    border: "none",
-    cursor: "pointer",
-    "&:hover": {
-      backgroundColor: "#005689",
-    },
+    padding: 10,
+    margin: "0 5px",
+    borderRadius: 4,
+    fontSize: 19,
+    height: 20,
+    width: 230,
   };
 });
+
+export const Container = styled("div")(() => ({
+  display: "flex",
+  marginBottom: 20,
+}));
