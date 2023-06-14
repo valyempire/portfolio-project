@@ -1,58 +1,53 @@
-import { styled } from "@mui/system";
+import { Box, styled } from "@mui/system";
 
-interface WorkItemProps {
-  backgroundImage: string;
-}
+export const CarouselContainer = styled(Box)(() => ({
+  padding: "5rem",
+  backgroundColor: "#012867",
+  color: "azure",
+  height: 532,
+}));
 
-export const WorkContainer = styled("div")({
+export const StyledBox = styled(Box)(() => ({
+  position: "relative",
+  color: "azure",
+  height: "400px",
+  width: "600px",
   display: "flex",
-  flexDirection: "row",
+  flexDirection: "column",
+  justifyContent: "center",
   alignItems: "center",
   padding: "2rem",
-});
+}));
 
-export const WorkItem = styled("div")({
+export const Title = styled("h3")(() => ({
+  textAlign: "center",
+  marginBottom: "1rem",
+}));
+
+export const Image = styled("img")(() => ({
+  height: "69%",
+  width: "94%",
+}));
+
+export const LinkContainer = styled("div")(() => ({
+  position: "absolute",
+  bottom: "50px",
+  left: "10px",
+  right: "10px",
   display: "flex",
-  marginBottom: "2rem",
-  backgroundColor: "#f4f4f4",
-  borderRadius: "8px",
-  overflow: "hidden",
-});
+  justifyContent: "center",
+}));
 
-export const WorkImage = styled("div")<WorkItemProps>(
-  ({ backgroundImage }) => ({
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    width: "200px",
-    height: "200px",
-  })
-);
-
-export const WorkInfo = styled("div")({
-  padding: "1rem",
-});
-
-export const WorkTitle = styled("span")({
-  fontSize: "1.2rem",
-  fontWeight: "bold",
-  marginBottom: "0.5rem",
-});
-
-export const WorkButtonContainer = styled("div")({
+export const LinkItem = styled("div")(() => ({
   display: "flex",
-  justifyContent: "flex-end",
-});
+  alignItems: "center",
+}));
 
-export const WorkButton = styled("button")({
-  padding: "0.5rem 1rem",
-  marginLeft: "0.5rem",
-  backgroundColor: "#007cb9",
-  color: "#fff",
-  border: "none",
-  borderRadius: "4px",
-  cursor: "pointer",
-  "&:hover": {
-    backgroundColor: "#005689",
+export const Link = styled("a")(() => ({
+  color: "white",
+  textDecoration: "none",
+  marginLeft: "10px",
+  ":first-child": {
+    marginLeft: 0,
   },
-});
+}));
