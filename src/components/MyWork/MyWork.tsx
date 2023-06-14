@@ -1,49 +1,37 @@
 import React from "react";
 import { data } from "../../data/data";
 import {
-  WorkContainer,
-  WorkItem,
-  WorkButton,
-  WorkImage,
-  WorkInfo,
-  WorkTitle,
-  WorkButtonContainer,
+  CarouselContainer,
+  StyledBox,
+  Title,
+  LinkContainer,
+  LinkItem,
+  Link,
 } from "./MyWork.styles";
 
 export const MyWork: React.FC = () => {
   const project = data;
 
   return (
-    <WorkContainer>
-      <div>
-        <div>
-          <p>Work</p>
-          <p>Check out some of my recent work</p>
-        </div>
-
-        <div>
-          {project.map((item) => (
-            <WorkItem key={item.id}>
-              <WorkImage backgroundImage={item.image} />
-              <WorkInfo>
-                <WorkTitle>{item.name}</WorkTitle>
-                <WorkButtonContainer>
-                  <a
-                    href={item.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <WorkButton>Code</WorkButton>
-                  </a>
-                  <a href={item.live} target="_blank" rel="noopener noreferrer">
-                    <WorkButton>Live</WorkButton>
-                  </a>
-                </WorkButtonContainer>
-              </WorkInfo>
-            </WorkItem>
-          ))}
-        </div>
-      </div>
-    </WorkContainer>
+    <CarouselContainer>
+      <Slider {...settings}>
+        {data.map((item) => (
+          <StyledBox key={item.id}>
+            <Title>{item.name}</Title>
+            <Image src={item.image} alt={item.name} />
+            <LinkContainer>
+              <LinkItem>
+                <Link href={item.github} target="_blank">
+                  GitHub
+                </Link>
+                <Link href={item.live} target="_blank">
+                  Live
+                </Link>
+              </LinkItem>
+            </LinkContainer>
+          </StyledBox>
+        ))}
+      </Slider>
+    </CarouselContainer>
   );
 };
