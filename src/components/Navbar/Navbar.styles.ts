@@ -42,32 +42,32 @@ export const Menu = styled("div")(() => ({
   },
 }));
 
-export const Links = styled("ul")(() => ({
+export const Links = styled("div")(() => ({
   display: "flex",
-  listStyle: "none",
+  alignItems: "center",
   margin: 0,
   padding: 0,
 
-  li: {
+  "> * + *": {
     marginLeft: "1rem",
-
-    "@media (max-width: 768px)": {
-      marginBottom: "0.5rem",
-    },
-
-    a: {
-      textDecoration: "none",
-      color: "#fff",
-      transition: "color 0.3s ease",
-
-      "&:hover": {
-        color: "#ccc",
-      },
-    },
   },
 
   "@media (max-width: 768px)": {
     flexDirection: "column",
     alignItems: "flex-start",
+
+    "> * + *": {
+      marginBottom: "0.5rem",
+    },
+  },
+
+  a: {
+    textDecoration: "none",
+    color: "#fff",
+    transition: "color 0.3s ease",
+
+    "&:hover": {
+      color: "#ccc",
+    },
   },
 }));
