@@ -2,7 +2,7 @@ import { styled } from "@mui/system";
 import { Link } from "react-router-dom";
 
 export const NavbarContainer = styled("nav")(() => ({
-  backgroundColor: "#012867",
+  backgroundColor: "#3c416d",
   color: "#fff",
   margin: 0,
 }));
@@ -65,6 +65,7 @@ export const Links = styled("div")(() => ({
     textDecoration: "none",
     color: "#fff",
     transition: "color 0.3s ease",
+    marginRight: 25,
 
     "&:hover": {
       color: "#ccc",

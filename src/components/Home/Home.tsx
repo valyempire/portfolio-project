@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import loadingImage from "../../assets/loading3.webp";
+import loadingImage from "../../assets/loading1.gif";
 import "./Home.css";
 
 export const Home: React.FC = () => {

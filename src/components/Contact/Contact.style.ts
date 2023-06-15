@@ -10,7 +10,7 @@ export const PageContainer = styled("div")(() => {
     alignItems: "center",
     height: "100vh",
     // minHeight: "100vh",
-    backgroundColor: "#012867",
+    backgroundColor: "#3c416d",
   };
 });
 
@@ -18,7 +18,7 @@ export const ContentContainer = styled("div")(({ theme }) => {
   return {
     margin: theme.spacing(2),
     alignSelf: "center",
-    textAlign: "left", // Align the text to the left
+    textAlign: "left",
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
@@ -68,15 +68,15 @@ export const Textarea = styled("textarea")(({ theme }) => {
 export const SubmitButton = styled("button")(() => ({
   padding: "10px 20px",
   backgroundColor: "#fefefe",
-  color: "#0033a1",
+  color: "#3c416d",
   border: "none",
   borderRadius: 4,
   fontSize: 16,
   cursor: "pointer",
   marginLeft: 6,
   "&:hover": {
-    backgroundColor: "#002a6d",
-    color: "#f9fcf8",
+    backgroundColor: "#FFD75E",
+    color: "#3c416d",
     border: "1px solid white",
   },
 }));

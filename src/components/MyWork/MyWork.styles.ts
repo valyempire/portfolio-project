@@ -2,7 +2,7 @@ import { Box, styled } from "@mui/system";
 
 export const CarouselContainer = styled(Box)(() => ({
   padding: "5rem",
-  backgroundColor: "#012867",
+  backgroundColor: "#3c416d",
   color: "azure",
   height: 532,
 }));
@@ -17,6 +17,8 @@ export const StyledBox = styled(Box)(() => ({
   justifyContent: "center",
   alignItems: "center",
   padding: "2rem",
+  outline: "none",
+  boxShadow: "none",
 }));
 
 export const Title = styled("h3")(() => ({
@@ -36,6 +38,7 @@ export const LinkContainer = styled("div")(() => ({
   right: "10px",
   display: "flex",
   justifyContent: "center",
+  marginTop: 10,
 }));
 
 export const LinkItem = styled("div")(() => ({
@@ -47,6 +50,7 @@ export const Link = styled("a")(() => ({
   color: "white",
   textDecoration: "none",
   marginLeft: "10px",
+  marginRight: 25,
   ":first-child": {
     marginLeft: 0,
   },
