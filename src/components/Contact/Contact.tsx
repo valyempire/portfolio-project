@@ -1,6 +1,4 @@
 import { useRef } from "react";
-// import contact_img from "../../assets/—Pngtree—internet mobile technology poster_393602.jpg";
-
 /**
  * External imports
  */
@@ -20,6 +18,7 @@ import {
   SubmitButton,
   Container,
 } from "./Contact.style";
+import { Footer } from "../Footer";
 
 /**
  * Displays the component
@@ -58,7 +57,7 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section>
+    <>
       <PageContainer>
         <ContentContainer>
           <Title>Contact Me</Title>
@@ -85,6 +84,7 @@ export const Contact: React.FC = () => {
           <SubmitButton type="submit">Send Message</SubmitButton>
         </ContactFormContainer>
       </PageContainer>
-    </section>
+      <Footer />
+    </>
   );
 };

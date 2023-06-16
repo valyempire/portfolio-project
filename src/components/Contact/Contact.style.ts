@@ -8,7 +8,7 @@ export const PageContainer = styled("div")(() => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "100vh",
+    height: "75vh",
     // minHeight: "100vh",
     backgroundColor: "#3c416d",
   };
