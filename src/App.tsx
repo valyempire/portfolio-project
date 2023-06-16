@@ -9,6 +9,7 @@ export const App: React.FC = () => {
   return (
     <Router>
       <Navbar />
+
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/work" component={MyWork} />
