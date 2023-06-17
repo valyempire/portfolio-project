@@ -1,12 +1,10 @@
 import React from "react";
 import { ModalContainer, ModalContent } from "./Modal.styles";
+import { ModalProps } from "./Modal.types";
 
-interface ModalProps {
-  onCloseModal: () => void;
-  children: React.ReactNode;
-}
+export const Modal: React.FC<ModalProps> = (props) => {
+  const { children } = props;
 
-export const Modal: React.FC<ModalProps> = ({ children }) => {
   return (
     <ModalContainer>
       <ModalContent>{children}</ModalContent>
