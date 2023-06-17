@@ -32,18 +32,13 @@ export const Image = styled("img")(() => ({
 }));
 
 export const LinkContainer = styled("div")(() => ({
-  position: "absolute",
-  bottom: "50px",
-  left: "10px",
-  right: "10px",
   display: "flex",
   justifyContent: "center",
-  marginTop: 10,
+  marginTop: "1rem",
 }));
 
 export const LinkItem = styled("div")(() => ({
-  display: "flex",
-  alignItems: "center",
+  margin: "0 0.5rem",
 }));
 
 export const Link = styled("a")(() => ({
@@ -54,4 +49,24 @@ export const Link = styled("a")(() => ({
   ":first-child": {
     marginLeft: 0,
   },
+}));
+
+export const ModalImage = styled("img")(() => ({
+  width: 643,
+  height: 302,
+}));
+
+export const CloseButton = styled("button")(() => ({
+  backgroundColor: "#ccc",
+  border: "none",
+  padding: "0.5rem 1rem",
+  borderRadius: "4px",
+  marginTop: "1rem",
+  cursor: "pointer",
+  alignSelf: "flex-end",
+}));
+
+export const Description = styled("p")(() => ({
+  textAlign: "center",
+  color: "azure",
 }));

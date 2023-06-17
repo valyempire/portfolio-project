@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,9 +11,29 @@ import {
   LinkItem,
   Link,
   Image,
+  ModalImage,
+  Description,
+  CloseButton,
 } from "./MyWork.styles";
+import { Modal } from "../Modal/Modal";
+import { ModalItemsProps, DataItem } from "./MyWork.types";
 
 export const MyWork: React.FC = () => {
+  const [selectedItem, setSelectedItem] = useState<ModalItemsProps | null>(
+    null
+  );
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = (item: DataItem) => {
+    setSelectedItem(item);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedItem(null);
+    setIsModalOpen(false);
+  };
+
   const settings = {
     className: "center",
     centerMode: true,
@@ -44,23 +64,46 @@ export const MyWork: React.FC = () => {
   return (
     <CarouselContainer>
       <Slider {...settings}>
-        {data.map((item) => (
+        {data.map((item: DataItem) => (
           <StyledBox key={item.id}>
             <Title>{item.name}</Title>
             <Image src={item.image} alt={item.name} />
             <LinkContainer>
               <LinkItem>
-                <Link href={item.github} target="_blank">
-                  GitHub
-                </Link>
-                <Link href={item.live} target="_blank">
-                  Live
-                </Link>
+                <Link onClick={() => handleOpenModal(item)}>Description</Link>
               </LinkItem>
             </LinkContainer>
           </StyledBox>
         ))}
       </Slider>
+      {isModalOpen && selectedItem && (
+        <Modal onCloseModal={handleCloseModal}>
+          <CloseButton onClick={handleCloseModal}>Close</CloseButton>
+          <Title>{selectedItem.name}</Title>
+          <ModalImage src={selectedItem.image} />
+          <Description>{selectedItem.description}</Description>
+          <LinkContainer>
+            <LinkItem>
+              <Link
+                href={selectedItem.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </Link>
+            </LinkItem>
+            <LinkItem>
+              <Link
+                href={selectedItem.live}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live
+              </Link>
+            </LinkItem>
+          </LinkContainer>
+        </Modal>
+      )}
     </CarouselContainer>
   );
 };
