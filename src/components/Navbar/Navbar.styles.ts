@@ -82,7 +82,7 @@ export const MobileMenu = styled("div")<MobileMenuProps>(({ isOpen }) => ({
   justifyContent: "center",
   height: "100vh",
   width: "100%",
-  backgroundColor: "blue",
+  backgroundColor: "#3c416d",
   position: "fixed",
   top: 0,
   left: 0,

@@ -3,6 +3,7 @@ import { useRef } from "react";
  * External imports
  */
 import emailjs from "@emailjs/browser";
+import { Grid } from "@mui/material";
 
 /**
  * Imports styles
@@ -59,30 +60,36 @@ export const Contact: React.FC = () => {
   return (
     <>
       <PageContainer>
-        <ContentContainer>
-          <Title>Contact Me</Title>
-          <Paragraph>Get in Touch</Paragraph>
-          <Paragraph>Email: bocanel.valerica92@gmail.com</Paragraph>
-          <Paragraph>Phone: (+4) 0741412636 </Paragraph>
-        </ContentContainer>
-        <ContactFormContainer ref={form} onSubmit={sendEmail}>
-          <Container>
-            <Input
-              type="text"
-              placeholder="Full Name"
-              name="user_name"
-              required
-            />
-            <Input
-              type="email"
-              placeholder="Email"
-              name="user_email"
-              required
-            />
-          </Container>
-          <Textarea placeholder="Message" name="message"></Textarea>
-          <SubmitButton type="submit">Send Message</SubmitButton>
-        </ContactFormContainer>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={6}>
+            <ContentContainer>
+              <Title>Contact Me</Title>
+              <Paragraph>Get in Touch</Paragraph>
+              <Paragraph>Email: bocanel.valerica92@gmail.com</Paragraph>
+              <Paragraph>Phone: (+4) 0741412636 </Paragraph>
+            </ContentContainer>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <ContactFormContainer ref={form} onSubmit={sendEmail}>
+              <Container>
+                <Input
+                  type="text"
+                  placeholder="Full Name"
+                  name="user_name"
+                  required
+                />
+                <Input
+                  type="email"
+                  placeholder="Email"
+                  name="user_email"
+                  required
+                />
+              </Container>
+              <Textarea placeholder="Message" name="message"></Textarea>
+              <SubmitButton type="submit">Send Message</SubmitButton>
+            </ContactFormContainer>
+          </Grid>
+        </Grid>
       </PageContainer>
       <Footer />
     </>

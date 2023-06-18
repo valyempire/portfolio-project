@@ -6,11 +6,14 @@ import { styled } from "@mui/system";
 export const PageContainer = styled("div")(() => {
   return {
     display: "flex",
-    justifyContent: "center",
+    flexDirection: "column",
+    justifyContent: "center", //
     alignItems: "center",
-    height: "75vh",
+    // height: "75vh",
     // minHeight: "100vh",
+    minHeight: "63vh",
     backgroundColor: "#3c416d",
+    paddingTop: "103px",
   };
 });
 
@@ -22,7 +25,11 @@ export const ContentContainer = styled("div")(({ theme }) => {
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
-    marginRight: 85,
+    marginRight: theme.spacing(2),
+    [theme.breakpoints.down("sm")]: {
+      alignItems: "center",
+      textAlign: "center",
+    },
   };
 });
 
@@ -40,14 +47,21 @@ export const Paragraph = styled("p")(() => {
   return {
     fontSize: 23,
     color: "azure",
-    marginLeft: 36,
+    // marginLeft: 36,
+    marginBottom: 10,
   };
 });
 
-export const ContactFormContainer = styled("form")(() => {
+export const ContactFormContainer = styled("form")(({ theme }) => {
   return {
     display: "flex",
     flexDirection: "column",
+    alignItems: "flex-start",
+    marginTop: 20,
+    [theme.breakpoints.down("sm")]: {
+      alignItems: "center",
+      marginTop: theme.spacing(4),
+    },
   };
 });
 
@@ -62,6 +76,9 @@ export const Textarea = styled("textarea")(({ theme }) => {
     marginBottom: theme.spacing(2),
     height: 186,
     width: 496,
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+    },
   };
 });
 
@@ -81,14 +98,17 @@ export const SubmitButton = styled("button")(() => ({
   },
 }));
 
-export const Input = styled("input")(() => {
+export const Input = styled("input")(({ theme }) => {
   return {
     padding: 10,
     margin: "0 5px",
     borderRadius: 4,
     fontSize: 19,
-    height: 20,
-    width: 230,
+    height: 40,
+    width: "100%",
+    [theme.breakpoints.up("sm")]: {
+      width: "auto",
+    },
   };
 });
 
