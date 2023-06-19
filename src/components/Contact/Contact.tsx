@@ -66,7 +66,7 @@ export const Contact: React.FC = () => {
               <Title>Contact Me</Title>
               <Paragraph>Get in Touch</Paragraph>
               <Paragraph>Email: bocanel.valerica92@gmail.com</Paragraph>
-              <Paragraph>Phone: (+4) 0741412636 </Paragraph>
+              <Paragraph>Phone: (+40) 741412636 </Paragraph>
             </ContentContainer>
           </Grid>
           <Grid item xs={12} sm={6}>
