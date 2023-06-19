@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
 import loadingImage from "../../assets/loading1.gif";
-import "./Home.css";
+import my_img from "../../assets/react.png";
+import {
+  Container,
+  LoadingImage,
+  Title,
+  Image,
+  AboutContainer,
+  Description,
+} from "./Home.styles";
 
 export const Home: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,9 +24,9 @@ export const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="loading-image">
+    <Container>
       {isLoading ? (
-        <img src={loadingImage} alt="Loading..." />
+        <LoadingImage src={loadingImage} alt="Loading..." />
       ) : (
         <AboutContainer>
           <Title>About Me</Title>
@@ -46,6 +54,6 @@ export const Home: React.FC = () => {
           </Description>
         </AboutContainer>
       )}
-    </div>
+    </Container>
   );
 };
