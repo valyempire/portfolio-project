@@ -64,7 +64,16 @@ export const Contact: React.FC = () => {
           <Grid item xs={12} sm={6}>
             <ContentContainer>
               <Title>Contact Me</Title>
-              <Paragraph>Get in Touch</Paragraph>
+              <Paragraph>
+                Welcome to my contact page! I'm excited to learn more about
+                future projects and collaborations. This contact form is the
+                fastest and easiest way to get in touch with me.
+              </Paragraph>
+              <Paragraph>
+                In addition to the contact form, I encourage you to contact me
+                through other methods. You can use the phone number or email
+                address below to get in touch with me directly
+              </Paragraph>
               <Paragraph>Email: bocanel.valerica92@gmail.com</Paragraph>
               <Paragraph>Phone: (+40) 741412636 </Paragraph>
             </ContentContainer>

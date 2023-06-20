@@ -38,7 +38,6 @@ export const Title = styled("h2")(() => {
     fontSize: 38,
     fontWeight: "bold",
     marginBottom: 10,
-    // marginLeft: 33,
     color: "azure",
   };
 });
@@ -47,7 +46,6 @@ export const Paragraph = styled("p")(() => {
   return {
     fontSize: 23,
     color: "azure",
-    // marginLeft: 36,
     marginBottom: 10,
   };
 });
@@ -104,7 +102,7 @@ export const Input = styled("input")(({ theme }) => {
     margin: "0 5px",
     borderRadius: 4,
     fontSize: 19,
-    height: 40,
+    height: 23,
     width: "100%",
     [theme.breakpoints.up("sm")]: {
       width: "auto",
