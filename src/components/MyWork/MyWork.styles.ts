@@ -1,4 +1,5 @@
 import { Box, styled } from "@mui/system";
+import Slider from "react-slick";
 
 export const CarouselContainer = styled(Box)(() => ({
   padding: "5rem",
@@ -23,7 +24,8 @@ export const StyledBox = styled(Box)(() => ({
 
 export const Title = styled("h3")(() => ({
   textAlign: "center",
-  marginBottom: "1rem",
+  color: "azure",
+  // marginBottom: "1rem",
 }));
 
 export const Image = styled("img")(() => ({
@@ -44,7 +46,7 @@ export const LinkItem = styled("div")(() => ({
 export const Link = styled("a")(() => ({
   color: "white",
   textDecoration: "none",
-  marginLeft: "10px",
+  marginLeft: 10,
   marginRight: 25,
   ":first-child": {
     marginLeft: 0,
@@ -52,15 +54,17 @@ export const Link = styled("a")(() => ({
 }));
 
 export const ModalImage = styled("img")(() => ({
-  width: 643,
-  height: 302,
+  display: "block",
+  margin: "0 auto",
+  maxHeight: "100%",
+  maxWidth: "100%",
 }));
 
 export const CloseButton = styled("button")(() => ({
   backgroundColor: "#ccc",
   border: "none",
   padding: "0.5rem 1rem",
-  borderRadius: "4px",
+  borderRadius: 4,
   marginTop: "1rem",
   cursor: "pointer",
   alignSelf: "flex-end",
@@ -69,4 +73,24 @@ export const CloseButton = styled("button")(() => ({
 export const Description = styled("p")(() => ({
   textAlign: "center",
   color: "azure",
+}));
+
+export const SliderStyle = styled(Slider)(() => ({
+  ".slick-dots": {
+    bottom: 20,
+  },
+  ".slick-dots li button:before": {
+    color: "rgba(255, 255, 255, 0.5)",
+    fontSize: 10,
+  },
+  ".slick-dots li.slick-active button:before": {
+    color: "rgba(255, 255, 255, 0.9)",
+  },
+  ".slick-prev:before, .slick-next:before": {
+    color: "rgba(255, 255, 255, 0.5)",
+    fontSize: 30,
+  },
+  ".slick-prev:hover:before, .slick-next:hover:before": {
+    color: "rgba(255, 255, 255, 0.9)",
+  },
 }));

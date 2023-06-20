@@ -13,7 +13,7 @@ export const PageContainer = styled("div")(() => {
     // minHeight: "100vh",
     minHeight: "63vh",
     backgroundColor: "#3c416d",
-    paddingTop: "103px",
+    paddingTop: 103,
   };
 });
 
@@ -38,7 +38,7 @@ export const Title = styled("h2")(() => {
     fontSize: 38,
     fontWeight: "bold",
     marginBottom: 10,
-    marginLeft: 33,
+    // marginLeft: 33,
     color: "azure",
   };
 });
@@ -75,7 +75,7 @@ export const Textarea = styled("textarea")(({ theme }) => {
     resize: "vertical",
     marginBottom: theme.spacing(2),
     height: 186,
-    width: 496,
+    width: 502,
     [theme.breakpoints.down("sm")]: {
       width: "100%",
     },

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { data } from "../../data/data";
@@ -14,6 +13,7 @@ import {
   ModalImage,
   Description,
   CloseButton,
+  SliderStyle,
 } from "./MyWork.styles";
 import { Modal } from "../Modal/Modal";
 import { ModalItemsProps, DataItem } from "./MyWork.types";
@@ -63,7 +63,7 @@ export const MyWork: React.FC = () => {
   };
   return (
     <CarouselContainer>
-      <Slider {...settings}>
+      <SliderStyle {...settings}>
         {data.map((item: DataItem) => (
           <StyledBox key={item.id}>
             <Title>{item.name}</Title>
@@ -75,7 +75,7 @@ export const MyWork: React.FC = () => {
             </LinkContainer>
           </StyledBox>
         ))}
-      </Slider>
+      </SliderStyle>
       {isModalOpen && selectedItem && (
         <Modal onCloseModal={handleCloseModal}>
           <CloseButton onClick={handleCloseModal}>Close</CloseButton>
