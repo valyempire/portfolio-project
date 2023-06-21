@@ -72,7 +72,7 @@ export const Contact: React.FC = () => {
               <Paragraph>
                 In addition to the contact form, I encourage you to contact me
                 through other methods. You can use the phone number or email
-                address below to get in touch with me directly
+                address below to get in touch with me directly.
               </Paragraph>
               <Paragraph>Email: bocanel.valerica92@gmail.com</Paragraph>
               <Paragraph>Phone: (+40) 741412636 </Paragraph>

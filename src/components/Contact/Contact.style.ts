@@ -26,6 +26,7 @@ export const ContentContainer = styled("div")(({ theme }) => {
     flexDirection: "column",
     alignItems: "flex-start",
     marginRight: theme.spacing(2),
+    marginTop: -92,
     [theme.breakpoints.down("sm")]: {
       alignItems: "center",
       textAlign: "center",
