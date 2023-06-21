@@ -6,6 +6,8 @@ export const Container = styled("div")(() => ({
   justifyContent: "center",
   alignItems: "center",
   height: "100vh",
+  backgroundColor: "#3c416d",
+  color: "azure",
 }));
 
 export const Content = styled("div")(() => ({
@@ -25,9 +27,9 @@ export const RightContent = styled("div")(() => ({
 
 export const Image = styled("img")(() => ({
   width: 625,
-  height: 381,
+  height: 338,
 }));
 
 export const Text = styled("div")(() => ({
-  fontSize: 25,
+  fontSize: 23,
 }));

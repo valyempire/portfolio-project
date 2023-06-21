@@ -19,7 +19,7 @@ import {
   SubmitButton,
   Container,
 } from "./Contact.style";
-import { Footer } from "../Footer";
+// import { Footer } from "../Footer";
 
 /**
  * Displays the component
@@ -100,7 +100,7 @@ export const Contact: React.FC = () => {
           </Grid>
         </Grid>
       </PageContainer>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
