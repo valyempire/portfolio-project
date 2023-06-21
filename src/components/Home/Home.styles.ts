@@ -6,6 +6,7 @@ export const Container = styled("div")(() => ({
   alignItems: "center",
   height: "100vh",
   backgroundColor: "#3c416d",
+  color: "azure",
 }));
 
 export const LoadingImage = styled("img")(() => ({
@@ -25,15 +26,17 @@ export const AboutContainer = styled("div")(() => ({
 export const Title = styled("h3")(() => ({
   textAlign: "center",
   marginBottom: "1rem",
+  fontSize: 35,
 }));
 
 export const Image = styled("img")(() => ({
-  width: "200px",
-  height: "200px",
+  width: 291,
+  height: 284,
   borderRadius: "50%",
   marginBottom: "1rem",
 }));
 
 export const Description = styled("p")(() => ({
   textAlign: "center",
+  fontSize: 25,
 }));

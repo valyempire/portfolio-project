@@ -7,7 +7,7 @@ import {
   Title,
   Image,
   AboutContainer,
-  // Description,
+  Description,
 } from "./Home.styles";
 import { HomeDescription } from "../HomeDescription/HomeDescription";
 
@@ -25,16 +25,22 @@ export const Home: React.FC = () => {
   }, []);
 
   return (
-    <Container>
-      {isLoading ? (
-        <LoadingImage src={loadingImage} alt="Loading..." />
-      ) : (
-        <AboutContainer>
-          <Title>About Me</Title>
-          <Image src={my_img} alt="Profile Image" />
-          <HomeDescription />
-        </AboutContainer>
-      )}
-    </Container>
+    <>
+      <Container>
+        {isLoading ? (
+          <LoadingImage src={loadingImage} alt="Loading..." />
+        ) : (
+          <AboutContainer>
+            <Title>Front End Developer</Title>
+            <Image src={my_img} alt="Profile Image" />
+            <Description>
+              Hi there! My name is Valerica Bocanel, and I'm a dedicated and
+              motivated junior web developer.
+            </Description>
+          </AboutContainer>
+        )}
+      </Container>
+      <HomeDescription />
+    </>
   );
 };

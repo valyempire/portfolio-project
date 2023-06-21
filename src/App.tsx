@@ -4,6 +4,7 @@ import { Contact } from "./components/Contact";
 import { Home } from "./components/Home";
 import { MyWork } from "./components/MyWork";
 import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 
 export const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ export const App: React.FC = () => {
         <Route path="/work" component={MyWork} />
         <Route path="/contact" component={Contact} />
       </Switch>
+      <Footer />
     </Router>
   );
 };

@@ -23,7 +23,7 @@ export const Navbar: React.FC = () => {
   return (
     <NavbarContainer>
       <NavbarWrapper>
-        <Logo to="/">Bocanel Valerica</Logo>
+        <Logo to="/">Valerica Bocanel</Logo>
 
         <Links>
           <NavLink exact to="/" activeStyle={{ color: "#FFD75E" }}>

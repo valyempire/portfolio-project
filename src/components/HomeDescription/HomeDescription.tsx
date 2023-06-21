@@ -1,4 +1,4 @@
-import web_img from "../../assets/responsive-web-design-hero-image.jpg";
+import web_img from "../../assets/0-responsive-web-design-hero-image.jpg";
 import teamwork_img from "../../assets/software-development-team-structure-scaled.jpg";
 
 import {
@@ -10,7 +10,7 @@ import {
   Image,
 } from "./HomeDescription.styles";
 
-export const HomeDescription = () => {
+export const HomeDescription: React.FC = () => {
   return (
     <Container>
       <Content>
