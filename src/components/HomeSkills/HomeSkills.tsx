@@ -1,4 +1,12 @@
 import { skills, description } from "../../utils/";
+import {
+  CategoryContainer,
+  SkillsContainer,
+  SkillsList,
+  SkillItem,
+  Description,
+  CategoriesContainer,
+} from "./HomeSkills.styles";
 
 export const HomeSkills = () => {
   const displaySkills = () => {
