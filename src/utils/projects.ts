@@ -3,7 +3,7 @@ import smartbrain_img from "../assets/projects/smart-brain.jpg";
 import hangman_img from "../assets/projects/hangman.png";
 import pokedex_img from "../assets/projects/Pokedex-feature.png";
 
-export const data = [
+export const projects = [
   {
     id: 1,
     name: "LightsOut",

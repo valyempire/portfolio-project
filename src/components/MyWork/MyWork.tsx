@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { data } from "../../data/data";
+import { projects, settings } from "../../utils";
+
 import {
   CarouselContainer,
   StyledBox,
@@ -34,37 +35,10 @@ export const MyWork: React.FC = () => {
     setIsModalOpen(false);
   };
 
-  const settings = {
-    className: "center",
-    centerMode: true,
-    centerPadding: "60px",
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
   return (
     <CarouselContainer>
       <SliderStyle {...settings}>
-        {data.map((item: DataItem) => (
+        {projects.map((item: DataItem) => (
           <StyledBox key={item.id}>
             <Title>{item.name}</Title>
             <Image src={item.image} alt={item.name} />
