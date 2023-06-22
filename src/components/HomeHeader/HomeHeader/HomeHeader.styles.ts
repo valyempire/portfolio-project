@@ -25,7 +25,7 @@ export const Title = styled("h3")(() => ({
 }));
 
 export const Image = styled("img")(() => ({
-  width: 386,
+  width: 439,
   height: 327,
   borderRadius: "15%",
   marginBottom: "1rem",
@@ -34,6 +34,7 @@ export const Image = styled("img")(() => ({
 export const Description = styled("p")(() => ({
   textAlign: "center",
   fontSize: 25,
+  marginBottom: 50,
 }));
 
 export const HomeContainer = styled(Container)(() => ({

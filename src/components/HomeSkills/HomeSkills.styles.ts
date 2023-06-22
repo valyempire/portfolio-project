@@ -32,8 +32,9 @@ export const CategoryContainer = styled("div")(({ theme }) => ({
   color: "azure",
   borderRadius: "75px",
   fontSize: "30px",
+  whiteSpace: "nowrap",
   [theme.breakpoints.down("md")]: {
-    flexBasis: "auto",
+    flexBasis: "100%",
   },
 }));
 
