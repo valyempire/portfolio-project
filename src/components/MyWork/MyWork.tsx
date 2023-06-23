@@ -35,30 +35,26 @@ export const MyWork: React.FC = () => {
     setIsModalOpen(false);
   };
 
-  return (
-    <CarouselContainer>
-      <Header>These are my projects</Header>
-      <Paragraph>
-        Welcome to my portfolio! Below you can see some of the projects I've
-        been working on. Feel free to explore and learn more about each project
-        by clicking on the "Description" link.
-      </Paragraph>
-      <SliderStyle {...settings}>
-        {projects.map((item: DataItem) => (
-          <StyledBox key={item.id}>
-            <Title>{item.name}</Title>
-            <Image src={item.image} alt={item.name} />
-            <LinkContainer>
-              <LinkItem>
-                <LinkDescription onClick={() => handleOpenModal(item)}>
-                  Description
-                </LinkDescription>
-              </LinkItem>
-            </LinkContainer>
-          </StyledBox>
-        ))}
-      </SliderStyle>
-      {isModalOpen && selectedItem && (
+  const renderSlider = () => {
+    return projects.map((item: DataItem) => (
+      <StyledBox key={item.id}>
+        <Title>{item.name}</Title>
+        <Image src={item.image} alt={item.name} />
+        <LinkContainer>
+          <LinkItem>
+            <LinkDescription onClick={() => handleOpenModal(item)}>
+              Description
+            </LinkDescription>
+          </LinkItem>
+        </LinkContainer>
+      </StyledBox>
+    ));
+  };
+
+  const renderModal = () => {
+    return (
+      isModalOpen &&
+      selectedItem && (
         <Modal onCloseModal={handleCloseModal}>
           <CloseButton onClick={handleCloseModal}>Close</CloseButton>
           <Title>{selectedItem.name}</Title>
@@ -85,7 +81,20 @@ export const MyWork: React.FC = () => {
             </LinkItem>
           </LinkContainer>
         </Modal>
-      )}
+      )
+    );
+  };
+
+  return (
+    <CarouselContainer>
+      <Header>These are my projects</Header>
+      <Paragraph>
+        Welcome to my portfolio! Below you can see some of the projects I've
+        been working on. Feel free to explore and learn more about each project
+        by clicking on the "Description" link.
+      </Paragraph>
+      <SliderStyle {...settings}>{renderSlider()}</SliderStyle>
+      {renderModal()}
     </CarouselContainer>
   );
 };
