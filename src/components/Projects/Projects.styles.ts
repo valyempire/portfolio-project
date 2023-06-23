@@ -39,6 +39,7 @@ export const Title = styled(Typography)(() => ({
   textAlign: "center",
   color: "azure",
   marginBottom: 10,
+  fontSize: 20,
 }));
 
 export const Image = styled("img")(() => ({
@@ -56,13 +57,31 @@ export const LinkItem = styled("div")(({ theme }) => ({
   margin: `0 ${theme.spacing(1)}`,
 }));
 
-export const LinkDescription = styled("a")(({ theme }) => ({
-  color: "white",
+// export const LinkDescription = styled("a")(({ theme }) => ({
+//   color: "white",
+//   textDecoration: "none",
+//   marginLeft: theme.spacing(1),
+//   marginRight: theme.spacing(2),
+//   fontSize: 18,
+//   "&:hover": {
+//     color: "red",
+//   },
+// }));
+
+export const LinkDescription = styled("a")(() => ({
+  display: "inline-block",
+  padding: "10px 20px",
+  backgroundColor: "#3c416d",
+  color: "azure",
   textDecoration: "none",
-  marginLeft: theme.spacing(1),
-  marginRight: theme.spacing(2),
-  ":first-child": {
-    marginLeft: 0,
+  borderRadius: 14,
+  cursor: "pointer",
+  transition: "background-color 0.3s ease",
+  border: "1px solid #ccc",
+  marginTop: 5,
+  "&:hover": {
+    backgroundColor: "#FFD75E",
+    color: "black",
   },
 }));
 
@@ -96,6 +115,7 @@ export const SliderStyle = styled(Slider)(() => ({
   ".slick-dots li button:before": {
     color: "rgba(255, 255, 255, 0.5)",
     fontSize: 10,
+    marginTop: 25,
   },
   ".slick-dots li.slick-active button:before": {
     color: "rgba(255, 255, 255, 0.9)",

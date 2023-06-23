@@ -17,11 +17,11 @@ import {
   Description,
   CloseButton,
   SliderStyle,
-} from "./MyWork.styles";
+} from "./Projects.styles";
 import { Modal } from "../Modal";
-import { ModalItems, DataItem } from "./MyWork.types";
+import { ModalItems, DataItem } from "./Projects.types";
 
-export const MyWork: React.FC = () => {
+export const Projects: React.FC = () => {
   const [selectedItem, setSelectedItem] = useState<ModalItems | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 

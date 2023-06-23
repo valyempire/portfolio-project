@@ -9,7 +9,7 @@ import {
 } from "./HomeSkills.styles";
 
 export const HomeSkills = () => {
-  const displaySkills = () => {
+  const renderSkills = () => {
     return skills.map((category, index) => (
       <CategoryContainer key={index}>
         <h3>{category.category}</h3>
@@ -25,7 +25,7 @@ export const HomeSkills = () => {
   return (
     <SkillsContainer>
       <Description>{description}</Description>
-      <CategoriesContainer>{displaySkills()}</CategoriesContainer>
+      <CategoriesContainer>{renderSkills()}</CategoriesContainer>
     </SkillsContainer>
   );
 };

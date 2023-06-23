@@ -38,7 +38,6 @@ export const LeftContent = styled(Box)(({ theme }) => ({
 export const RightContent = styled(Box)(({ theme }) => ({
   display: "flex",
   flexGrow: 1,
-
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
   },
@@ -47,6 +46,10 @@ export const RightContent = styled(Box)(({ theme }) => ({
 export const Image = styled("img")(({ theme }) => ({
   width: 625,
   height: 338,
+  [theme.breakpoints.down("md")]: {
+    marginTop: 20,
+    marginBottom: 20,
+  },
 
   [theme.breakpoints.down("sm")]: {
     width: "100%",
@@ -58,6 +61,6 @@ export const Text = styled("div")(({ theme }) => ({
   fontSize: 23,
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: 18,
+    fontSize: 22,
   },
 }));

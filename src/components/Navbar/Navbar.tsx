@@ -29,8 +29,8 @@ export const Navbar: React.FC = () => {
           <NavLink exact to="/" activeStyle={{ color: "#FFD75E" }}>
             Home
           </NavLink>
-          <NavLink exact to="/work" activeStyle={{ color: "#FFD75E" }}>
-            My Work
+          <NavLink exact to="/projects" activeStyle={{ color: "#FFD75E" }}>
+            Projects
           </NavLink>
           <NavLink exact to="/contact" activeStyle={{ color: "#FFD75E" }}>
             Contact
@@ -54,11 +54,11 @@ export const Navbar: React.FC = () => {
           </NavLink>
           <NavLink
             exact
-            to="/work"
+            to="/projects"
             activeStyle={{ color: "#FFD75E" }}
             onClick={handleLinkClick}
           >
-            My Work
+            Projects
           </NavLink>
           <NavLink
             exact

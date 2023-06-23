@@ -31,10 +31,13 @@ export const Image = styled("img")(() => ({
   marginBottom: "1rem",
 }));
 
-export const Description = styled("p")(() => ({
+export const Description = styled("p")(({ theme }) => ({
   textAlign: "center",
   fontSize: 25,
   marginBottom: 50,
+  [theme.breakpoints.down("md")]: {
+    marginBottom: 100,
+  },
 }));
 
 export const HomeContainer = styled(Container)(() => ({

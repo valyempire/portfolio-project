@@ -9,10 +9,14 @@ export const SkillsContainer = styled("div")({
   marginBottom: 20,
 });
 
-export const Description = styled("h2")({
+export const Description = styled("h2")(({ theme }) => ({
   textAlign: "center",
+  width: "80%",
   marginBottom: 20,
-});
+  [theme.breakpoints.down("md")]: {
+    marginTop: 50,
+  },
+}));
 
 export const CategoriesContainer = styled("div")({
   display: "flex",
