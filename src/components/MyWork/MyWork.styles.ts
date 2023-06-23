@@ -86,6 +86,7 @@ export const CloseButton = styled("button")(({ theme }) => ({
 export const Description = styled(Typography)(() => ({
   textAlign: "center",
   color: "azure",
+  marginTop: 15,
 }));
 
 export const SliderStyle = styled(Slider)(() => ({
