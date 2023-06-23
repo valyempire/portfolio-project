@@ -31,15 +31,15 @@ export const MenuIcon = styled("div")(() => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    width: "30px",
-    height: "30px",
+    width: 30,
+    height: 30,
     cursor: "pointer",
 
     ".line": {
       width: "100%",
-      height: "2px",
+      height: 2,
       backgroundColor: "#fff",
-      marginBottom: "4px",
+      marginBottom: 4,
       transition: "background-color 0.3s ease",
     },
 
@@ -113,10 +113,10 @@ export const Menu = styled("div")(() => ({
   cursor: "pointer",
 
   ".icon-line": {
-    width: "25px",
-    height: "2px",
+    width: 25,
+    height: 2,
     backgroundColor: "#fff",
-    marginBottom: "4px",
+    marginBottom: 4,
   },
 
   "@media (min-width: 769px)": {

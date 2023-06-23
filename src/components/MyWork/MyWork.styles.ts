@@ -2,17 +2,17 @@ import { Box, styled } from "@mui/system";
 import Slider from "react-slick";
 
 export const CarouselContainer = styled(Box)(() => ({
-  padding: "5rem",
+  padding: "3rem",
   backgroundColor: "#3c416d",
   color: "azure",
-  height: 532,
+  height: 500,
 }));
 
 export const StyledBox = styled(Box)(() => ({
   position: "relative",
   color: "azure",
-  height: "400px",
-  width: "600px",
+  height: 400,
+  width: 600,
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
@@ -25,7 +25,6 @@ export const StyledBox = styled(Box)(() => ({
 export const Title = styled("h3")(() => ({
   textAlign: "center",
   color: "azure",
-  // marginBottom: "1rem",
 }));
 
 export const Image = styled("img")(() => ({

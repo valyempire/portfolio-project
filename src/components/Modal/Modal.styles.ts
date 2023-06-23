@@ -16,10 +16,9 @@ export const ModalContainer = styled("div")(() => ({
 export const ModalContent = styled("div")(() => ({
   backgroundColor: "#3c416d",
   padding: "1rem",
-  borderRadius: "4px",
+  borderRadius: 4,
   width: 655,
   height: 535,
-  // minHeight: 200,
   fontSize: 20,
   overflow: "auto",
 }));
