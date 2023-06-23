@@ -5,24 +5,24 @@ import { projects, settings } from "../../utils";
 
 import {
   CarouselContainer,
+  Header,
+  Paragraph,
   StyledBox,
   Title,
   LinkContainer,
   LinkItem,
-  Link,
+  LinkDescription,
   Image,
   ModalImage,
   Description,
   CloseButton,
   SliderStyle,
 } from "./MyWork.styles";
-import { Modal } from "../Modal/Modal";
-import { ModalItemsProps, DataItem } from "./MyWork.types";
+import { Modal } from "../Modal";
+import { ModalItems, DataItem } from "./MyWork.types";
 
 export const MyWork: React.FC = () => {
-  const [selectedItem, setSelectedItem] = useState<ModalItemsProps | null>(
-    null
-  );
+  const [selectedItem, setSelectedItem] = useState<ModalItems | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = (item: DataItem) => {
@@ -37,6 +37,12 @@ export const MyWork: React.FC = () => {
 
   return (
     <CarouselContainer>
+      <Header>These are my projects</Header>
+      <Paragraph>
+        Welcome to my portfolio! Below you can see some of the projects I've
+        been working on. Feel free to explore and learn more about each project
+        by clicking on the "Description" link.
+      </Paragraph>
       <SliderStyle {...settings}>
         {projects.map((item: DataItem) => (
           <StyledBox key={item.id}>
@@ -44,7 +50,9 @@ export const MyWork: React.FC = () => {
             <Image src={item.image} alt={item.name} />
             <LinkContainer>
               <LinkItem>
-                <Link onClick={() => handleOpenModal(item)}>Description</Link>
+                <LinkDescription onClick={() => handleOpenModal(item)}>
+                  Description
+                </LinkDescription>
               </LinkItem>
             </LinkContainer>
           </StyledBox>
@@ -58,22 +66,22 @@ export const MyWork: React.FC = () => {
           <Description>{selectedItem.description}</Description>
           <LinkContainer>
             <LinkItem>
-              <Link
+              <LinkDescription
                 href={selectedItem.github}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 GitHub
-              </Link>
+              </LinkDescription>
             </LinkItem>
             <LinkItem>
-              <Link
+              <LinkDescription
                 href={selectedItem.live}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Live
-              </Link>
+              </LinkDescription>
             </LinkItem>
           </LinkContainer>
         </Modal>

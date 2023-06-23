@@ -1,5 +1,5 @@
 import React from "react";
-import my_img from "../../../assets/vali_img.jpg";
+import my_img from "../../../assets/vali.jpg";
 import {
   HomeContainer,
   Title,

@@ -1,4 +1,4 @@
-export interface ModalItemsProps {
+export interface ModalItems {
   id: number;
   name: string;
   description: string;

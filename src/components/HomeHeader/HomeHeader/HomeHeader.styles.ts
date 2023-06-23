@@ -25,9 +25,9 @@ export const Title = styled("h3")(() => ({
 }));
 
 export const Image = styled("img")(() => ({
-  width: 439,
-  height: 327,
-  borderRadius: "15%",
+  width: 330,
+  height: 323,
+  borderRadius: "60%",
   marginBottom: "1rem",
 }));
 
