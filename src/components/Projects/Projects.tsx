@@ -1,6 +1,18 @@
 import react_img from "../../assets/react.png";
 import { projects } from "../../utils";
-import "./Projects.styles";
+import {
+  Container,
+  Card,
+  Left,
+  Right,
+  Description,
+  Image,
+  Title,
+  Links,
+  Link,
+  Icon,
+  IconContainer,
+} from "./Projects.styles";
 
 export const Projects: React.FC = () => {
   return (

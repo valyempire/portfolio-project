@@ -1,130 +1,72 @@
-import { Box, styled } from "@mui/system";
-import Slider from "react-slick";
-import { Typography } from "@mui/material";
+import { styled } from "@mui/system";
 
-export const CarouselContainer = styled(Box)(() => ({
-  padding: "3rem",
-  backgroundColor: "#3c416d",
-  color: "azure",
-  minHeight: 500,
+export const Container = styled("div")(() => ({
+  backgroundColor: "aquamarine",
 }));
 
-export const Header = styled(Typography)(({ theme }) => ({
-  textAlign: "center",
-  fontSize: 30,
-  marginBottom: theme.spacing(2),
+export const Card = styled("div")(() => ({
+  display: "flex",
+  width: "65%",
+  border: "1px solid #ccc",
+  borderRadius: "8px",
+  padding: "16px",
+  marginLeft: "200px",
+  backgroundColor: "aqua",
+  marginTop: "30px",
+  marginBottom: "30px",
 }));
 
-export const Paragraph = styled(Typography)(({ theme }) => ({
-  textAlign: "center",
-  fontSize: 21,
-  marginBottom: theme.spacing(2),
+export const Left = styled("div")(() => ({
+  width: "50%",
 }));
 
-export const StyledBox = styled(Box)(({ theme }) => ({
-  position: "relative",
-  color: "azure",
-  height: 400,
-  width: "100%",
+export const Right = styled("div")(() => ({
+  width: "50%",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  padding: theme.spacing(2),
-  outline: "none",
-  boxShadow: "none",
-}));
-
-export const Title = styled(Typography)(() => ({
-  textAlign: "center",
-  color: "azure",
-  marginBottom: 10,
-  fontSize: 20,
+  justifyContent: "space-between",
+  paddingLeft: "16px",
 }));
 
 export const Image = styled("img")(() => ({
-  height: "69%",
-  width: "94%",
+  width: "100%",
+  height: "auto",
+  borderRadius: "8px",
 }));
 
-export const LinkContainer = styled("div")(({ theme }) => ({
+export const Title = styled("h2")(() => ({
+  textAlign: "center",
+}));
+
+export const Description = styled("p")(() => ({
+  fontSize: "20px",
+}));
+
+export const Links = styled("div")(() => ({
+  display: "flex",
+  justifyContent: "space-between",
+  marginTop: "16px",
+}));
+
+export const Link = styled("a")(() => ({
+  textDecoration: "none",
+  color: "#000",
+  padding: "8px",
+  border: "1px solid #ccc",
+  borderRadius: "4px",
+}));
+
+export const IconContainer = styled("div")(() => ({
   display: "flex",
   justifyContent: "center",
-  marginTop: theme.spacing(1),
+  marginTop: "16px",
 }));
 
-export const LinkItem = styled("div")(({ theme }) => ({
-  margin: `0 ${theme.spacing(1)}`,
-}));
-
-// export const LinkDescription = styled("a")(({ theme }) => ({
-//   color: "white",
-//   textDecoration: "none",
-//   marginLeft: theme.spacing(1),
-//   marginRight: theme.spacing(2),
-//   fontSize: 18,
-//   "&:hover": {
-//     color: "red",
-//   },
-// }));
-
-export const LinkDescription = styled("a")(() => ({
-  display: "inline-block",
-  padding: "10px 20px",
-  backgroundColor: "#3c416d",
-  color: "azure",
-  textDecoration: "none",
-  borderRadius: 14,
-  cursor: "pointer",
-  transition: "background-color 0.3s ease",
-  border: "1px solid #ccc",
-  marginTop: 5,
+export const Icon = styled("img")(() => ({
+  width: "24px",
+  height: "24px",
+  marginRight: "8px",
   "&:hover": {
-    backgroundColor: "#FFD75E",
-    color: "black",
-  },
-}));
-
-export const ModalImage = styled("img")(() => ({
-  display: "block",
-  margin: "0 auto",
-  maxHeight: "100%",
-  maxWidth: "100%",
-}));
-
-export const CloseButton = styled("button")(({ theme }) => ({
-  backgroundColor: "#ccc",
-  border: "none",
-  padding: theme.spacing(1, 2),
-  borderRadius: 4,
-  marginTop: theme.spacing(1),
-  cursor: "pointer",
-  alignSelf: "flex-end",
-}));
-
-export const Description = styled(Typography)(() => ({
-  textAlign: "center",
-  color: "azure",
-  marginTop: 15,
-}));
-
-export const SliderStyle = styled(Slider)(() => ({
-  ".slick-dots": {
-    bottom: 20,
-  },
-  ".slick-dots li button:before": {
-    color: "rgba(255, 255, 255, 0.5)",
-    fontSize: 10,
-    marginTop: 25,
-  },
-  ".slick-dots li.slick-active button:before": {
-    color: "rgba(255, 255, 255, 0.9)",
-  },
-  ".slick-prev:before, .slick-next:before": {
-    color: "rgba(255, 255, 255, 0.5)",
-    fontSize: 30,
-  },
-  ".slick-prev:hover:before, .slick-next:hover:before": {
-    color: "rgba(255, 255, 255, 0.9)",
+    transform: "scale(1.2)",
   },
 }));
