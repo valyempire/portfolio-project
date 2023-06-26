@@ -1,17 +1,4 @@
 body {
   margin: 0;
-}
-
-::-webkit-scrollbar {
-  /* width: 5px; */
-  background: #3c416d;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: rgb(255, 215, 94);
-  box-shadow: inset -12px -20px 20px rgb(255 221 171);
-}
-::-webkit-scrollbar-track {
-  margin-top: 0;
-  border-radius: 10px;
+  background-color: #4f709c;
 }

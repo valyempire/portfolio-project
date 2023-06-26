@@ -12,7 +12,7 @@ export const PageContainer = styled("div")(() => {
     // height: "75vh",
     // minHeight: "100vh",
     minHeight: "63vh",
-    backgroundColor: "#3c416d",
+    backgroundColor: "#4F709C",
     paddingTop: 103,
   };
 });
@@ -91,8 +91,8 @@ export const SubmitButton = styled("button")(() => ({
   cursor: "pointer",
   marginLeft: 6,
   "&:hover": {
-    backgroundColor: "#FFD75E",
-    color: "#3c416d",
+    backgroundColor: "#213555",
+    color: "azure",
     border: "1px solid white",
   },
 }));

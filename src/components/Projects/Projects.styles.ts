@@ -1,7 +1,7 @@
 import { styled } from "@mui/system";
 
 export const Container = styled("div")(() => ({
-  backgroundColor: "aquamarine",
+  backgroundColor: "#4F709C",
 }));
 
 export const Card = styled("div")(() => ({
@@ -11,7 +11,7 @@ export const Card = styled("div")(() => ({
   borderRadius: "8px",
   padding: "16px",
   marginLeft: "200px",
-  backgroundColor: "aqua",
+  backgroundColor: "#F5EFE7",
   marginTop: "30px",
   marginBottom: "30px",
 }));
