@@ -31,6 +31,14 @@ export const Image = styled("img")(() => ({
   marginBottom: "1rem",
 }));
 
+/**
+ * 
+    width: 580px;
+    height: 287px;
+    border-radius: 74%;
+    margin-bottom: 1rem;
+ */
+
 export const Description = styled("p")(({ theme }) => ({
   textAlign: "center",
   fontSize: 25,

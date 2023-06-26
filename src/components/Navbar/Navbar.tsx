@@ -26,13 +26,13 @@ export const Navbar: React.FC = () => {
         <Logo to="/">Valerica Bocanel</Logo>
 
         <Links>
-          <NavLink exact to="/" activeStyle={{ color: "#FFD75E" }}>
+          <NavLink exact to="/" activeStyle={{ color: "#92b7fc" }}>
             Home
           </NavLink>
-          <NavLink exact to="/projects" activeStyle={{ color: "#FFD75E" }}>
+          <NavLink exact to="/projects" activeStyle={{ color: "#92b7fc" }}>
             Projects
           </NavLink>
-          <NavLink exact to="/contact" activeStyle={{ color: "#FFD75E" }}>
+          <NavLink exact to="/contact" activeStyle={{ color: "#92b7fc" }}>
             Contact
           </NavLink>
         </Links>

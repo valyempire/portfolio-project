@@ -1,5 +1,5 @@
-import web_img from "../../assets/0-responsive-web-design-hero-image.jpg";
-import teamwork_img from "../../assets/software-development-team-structure-scaled.jpg";
+import web_img from "../../assets/responsive-img3.png";
+import teamwork_img from "../../assets/responsive-img3.png";
 
 import {
   Container,
