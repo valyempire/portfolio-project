@@ -2,8 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { projects } from "../../utils";
+import { ProjectData } from "./Projects.types";
 import {
-  Container,
+  // Container,
   Card,
   Left,
   Right,
@@ -16,20 +17,10 @@ import {
   IconContainer,
 } from "./Projects.styles";
 
-interface Project {
-  id: number;
-  name: string;
-  image: string;
-  github: string;
-  live: string;
-  description: string;
-  icons?: { src: string; alt: string }[];
-}
-
 export const Projects: React.FC = () => {
   return (
-    <Container>
-      {projects.map((project: Project) => (
+    <>
+      {projects.map((project: ProjectData) => (
         <Card key={project.id}>
           <Left>
             <Image src={project.image} alt="Imagine" />
@@ -38,21 +29,21 @@ export const Projects: React.FC = () => {
             <Title>{project.name}</Title>
             <Description>{project.description}</Description>
             <IconContainer>
-              {project.icons?.map((icon, index) => (
+              {project.icons.map((icon, index) => (
                 <Icon key={index} src={icon.src} alt={icon.alt} />
               ))}
             </IconContainer>
             <Links>
-              <Link href={project.github}>
+              <Link href={project.github} target="_blank">
                 <FontAwesomeIcon icon={faGithub} />
               </Link>
-              <Link href={project.live}>
+              <Link href={project.live} target="_blank">
                 <FontAwesomeIcon icon={faExternalLinkAlt} />
               </Link>
             </Links>
           </Right>
         </Card>
       ))}
-    </Container>
+    </>
   );
 };

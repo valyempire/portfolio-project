@@ -5,7 +5,7 @@ export const Container = styled("div")(() => ({
   justifyContent: "center",
   alignItems: "center",
   height: "100vh",
-  backgroundColor: "#3c416d",
+  backgroundColor: "#213555",
   color: "azure",
 }));
 
@@ -25,7 +25,7 @@ export const Title = styled("h3")(() => ({
 }));
 
 export const Image = styled("img")(() => ({
-  width: 330,
+  width: 605,
   height: 323,
   borderRadius: "60%",
   marginBottom: "1rem",

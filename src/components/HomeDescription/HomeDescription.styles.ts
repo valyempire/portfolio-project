@@ -7,8 +7,8 @@ export const Container = styled(Box)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   height: "100vh",
-  backgroundColor: "#3c416d",
-  color: "azure",
+  backgroundColor: "#D8C4B6",
+  color: "black",
   padding: 20,
 
   [theme.breakpoints.down("md")]: {

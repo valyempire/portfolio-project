@@ -127,10 +127,10 @@ export const Contact: React.FC = () => {
     if (form.current !== null) {
       emailjs
         .sendForm(
-          "YOUR_SERVICE_ID",
-          "YOUR_TEMPLATE_ID",
+          "service_sobiku4", // YOUR_SERVICE_ID
+          "template_xr0evz9", // YOUR_TEMPLATE_ID
           form.current,
-          "YOUR_USER_ID"
+          "ThmIOLZE6oBtJ2z6C" // YOUR_PUBLIC_KEY
         )
         .then(
           (result) => {
@@ -171,7 +171,7 @@ export const Contact: React.FC = () => {
           </ContactFormContainer>
           <ContactInfo>
             <p>Email: bocanel.valerica92@gmail.com</p>
-            <p>Phone: (+40) 5555412636</p>
+            <p>Phone: (+40) 741412636</p>
           </ContactInfo>
         </Grid>
       </Grid>
