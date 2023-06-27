@@ -1,4 +1,6 @@
-import react_img from "../../assets/react.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { projects } from "../../utils";
 import {
   Container,
@@ -14,10 +16,20 @@ import {
   IconContainer,
 } from "./Projects.styles";
 
+interface Project {
+  id: number;
+  name: string;
+  image: string;
+  github: string;
+  live: string;
+  description: string;
+  icons?: { src: string; alt: string }[];
+}
+
 export const Projects: React.FC = () => {
   return (
     <Container>
-      {projects.map((project) => (
+      {projects.map((project: Project) => (
         <Card key={project.id}>
           <Left>
             <Image src={project.image} alt="Imagine" />
@@ -26,13 +38,17 @@ export const Projects: React.FC = () => {
             <Title>{project.name}</Title>
             <Description>{project.description}</Description>
             <IconContainer>
-              <Icon src={react_img} alt="icon" />
-              <Icon src={react_img} alt="icon" />
-              <Icon src={react_img} alt="icon" />
+              {project.icons?.map((icon, index) => (
+                <Icon key={index} src={icon.src} alt={icon.alt} />
+              ))}
             </IconContainer>
             <Links>
-              <Link href={project.github}>Git</Link>
-              <Link href={project.live}>Live</Link>
+              <Link href={project.github}>
+                <FontAwesomeIcon icon={faGithub} />
+              </Link>
+              <Link href={project.live}>
+                <FontAwesomeIcon icon={faExternalLinkAlt} />
+              </Link>
             </Links>
           </Right>
         </Card>

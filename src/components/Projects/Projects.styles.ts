@@ -11,7 +11,7 @@ export const Card = styled("div")(() => ({
   borderRadius: "35px",
   padding: "16px",
   marginLeft: "200px",
-  backgroundColor: "#5255811f",
+  backgroundColor: "#F5EFE7",
   marginTop: "30px",
   marginBottom: "30px",
 }));
