@@ -8,16 +8,18 @@ export const Card = styled("div")(() => ({
   display: "flex",
   width: "65%",
   border: "1px solid #ccc",
-  borderRadius: "8px",
+  borderRadius: "35px",
   padding: "16px",
   marginLeft: "200px",
-  backgroundColor: "#F5EFE7",
+  backgroundColor: "#5255811f",
   marginTop: "30px",
   marginBottom: "30px",
 }));
 
 export const Left = styled("div")(() => ({
   width: "50%",
+  justifyContent: "center", // Centrarea imaginii pe orizontală
+  alignItems: "center", // Centrarea imaginii pe verticală
 }));
 
 export const Right = styled("div")(() => ({
@@ -32,6 +34,8 @@ export const Image = styled("img")(() => ({
   width: "100%",
   height: "auto",
   borderRadius: "8px",
+  objectFit: "cover", // Imaginea va fi scalată pentru a ocupa întreg spațiul disponibil
+  marginTop: 20,
 }));
 
 export const Title = styled("h2")(() => ({
@@ -54,6 +58,8 @@ export const Link = styled("a")(() => ({
   padding: "8px",
   border: "1px solid #ccc",
   borderRadius: "4px",
+  marginLeft: 60,
+  marginRight: 60,
 }));
 
 export const IconContainer = styled("div")(() => ({
@@ -65,7 +71,7 @@ export const IconContainer = styled("div")(() => ({
 export const Icon = styled("img")(() => ({
   width: "24px",
   height: "24px",
-  marginRight: "8px",
+  marginRight: "25px",
   "&:hover": {
     transform: "scale(1.2)",
   },

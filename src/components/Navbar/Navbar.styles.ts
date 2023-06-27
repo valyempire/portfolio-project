@@ -68,6 +68,7 @@ export const Links = styled("div")(() => ({
     color: "#fff",
     transition: "color 0.3s ease",
     marginRight: "1rem",
+    fontSize: 18,
 
     "&:hover": {
       color: "#ccc",

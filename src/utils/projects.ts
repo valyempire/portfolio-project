@@ -1,7 +1,7 @@
-import lightsout_img from "../assets/projects/lights1.png";
+import lightsout_img from "../assets/projects/lights-out-min_gp9gvj.png";
 import smartbrain_img from "../assets/projects/smart-brain.jpg";
 import hangman_img from "../assets/projects/hangman.png";
-import yahtze_img from "../assets/projects/yahtzee.png";
+import yahtze_img from "../assets/projects/yahtzee-min_aokyls.png";
 
 export const projects = [
   {

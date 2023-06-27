@@ -1,117 +1,73 @@
-/**
- * Imports styled
- */
 import { styled } from "@mui/system";
 
-export const PageContainer = styled("div")(() => {
-  return {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center", //
-    alignItems: "center",
-    // height: "75vh",
-    // minHeight: "100vh",
-    minHeight: "63vh",
-    backgroundColor: "#4F709C",
-    paddingTop: 103,
-  };
+export const PageContainer = styled("div")({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  minHeight: "100vh",
+  backgroundColor: "#4F709C",
 });
 
-export const ContentContainer = styled("div")(({ theme }) => {
-  return {
-    margin: theme.spacing(2),
-    alignSelf: "center",
-    textAlign: "left",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-start",
-    marginRight: theme.spacing(2),
-    marginTop: -92,
-    [theme.breakpoints.down("sm")]: {
-      alignItems: "center",
-      textAlign: "center",
-    },
-  };
+export const ContactFormContainer = styled("form")({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  backgroundColor: "#4F709C;",
+  padding: "20px",
+  borderRadius: "30px",
+  marginBottom: "20px",
+  border: "1px solid #f1f1f1",
 });
 
-export const Title = styled("h2")(() => {
-  return {
-    fontSize: 38,
-    fontWeight: "bold",
-    marginBottom: 10,
-    color: "azure",
-  };
+export const Title = styled("h2")({
+  fontSize: "28px",
+  fontWeight: "bold",
+  marginBottom: "20px",
+  color: "azure",
 });
 
-export const Paragraph = styled("p")(() => {
-  return {
-    fontSize: 23,
-    color: "azure",
-    marginBottom: 10,
-  };
+export const Input = styled("input")({
+  width: "100%",
+  padding: "10px",
+  margin: "10px 0",
+  borderRadius: "4px",
+  fontSize: "16px",
+  backgroundColor: "#FFFFFF",
+  border: "none",
 });
 
-export const ContactFormContainer = styled("form")(({ theme }) => {
-  return {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-start",
-    marginTop: 20,
-    [theme.breakpoints.down("sm")]: {
-      alignItems: "center",
-      marginTop: theme.spacing(4),
-    },
-  };
+export const Textarea = styled("textarea")({
+  width: "100%",
+  padding: "10px",
+  margin: "10px 0",
+  borderRadius: "4px",
+  fontSize: "16px",
+  minHeight: "100px",
+  resize: "vertical",
+  backgroundColor: "#FFFFFF",
+  border: "none",
 });
 
-export const Textarea = styled("textarea")(({ theme }) => {
-  return {
-    padding: 10,
-    margin: "0 5px",
-    borderRadius: 4,
-    fontSize: 14,
-    minHeight: 40,
-    resize: "vertical",
-    marginBottom: theme.spacing(2),
-    height: 186,
-    width: 502,
-    [theme.breakpoints.down("sm")]: {
-      width: "100%",
-    },
-  };
-});
-
-export const SubmitButton = styled("button")(() => ({
+export const SubmitButton = styled("button")({
   padding: "10px 20px",
-  backgroundColor: "#fefefe",
+  backgroundColor: "#FFFFFF",
   color: "#3c416d",
   border: "none",
-  borderRadius: 4,
-  fontSize: 16,
+  borderRadius: "4px",
+  fontSize: "16px",
   cursor: "pointer",
-  marginLeft: 6,
   "&:hover": {
     backgroundColor: "#213555",
-    color: "azure",
-    border: "1px solid white",
+    color: "#FFFFFF",
   },
-}));
-
-export const Input = styled("input")(({ theme }) => {
-  return {
-    padding: 10,
-    margin: "0 5px",
-    borderRadius: 4,
-    fontSize: 19,
-    height: 23,
-    width: "100%",
-    [theme.breakpoints.up("sm")]: {
-      width: "auto",
-    },
-  };
 });
 
-export const Container = styled("div")(() => ({
-  display: "flex",
-  marginBottom: 20,
-}));
+export const ContactInfo = styled("div")({
+  textAlign: "center",
+  color: "#FFFFFF",
+  "& p": {
+    margin: "10px 0",
+    fontSize: 20,
+  },
+});
