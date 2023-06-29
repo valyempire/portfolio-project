@@ -1,6 +1,8 @@
 import web_img from "../../assets/responsive-img3.png";
 import { descriptionText, descriptionData } from "../../utils";
 import { Grid } from "@mui/material";
+import { Link } from "react-router-dom";
+
 import {
   Container,
   TopSection,
@@ -30,7 +32,9 @@ export const HomeDescription = () => {
         <Grid item xs={12} sm={6}>
           <TextWrapper>
             <Text>{descriptionText}</Text>
-            <Button>VIEW PORTFOLIO</Button>
+            <Link to="/projects">
+              <Button>VIEW PROJECTS</Button>
+            </Link>
           </TextWrapper>
         </Grid>
       </TopSection>
