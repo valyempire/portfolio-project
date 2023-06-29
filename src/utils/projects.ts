@@ -22,7 +22,7 @@ export const projects = [
       { src: material_img, alt: "Material Icon" },
     ],
     description:
-      "The game consists of a 5 by 5 grid of lights but also you can select 3 by 3 or 9 by 9 grid of lights. When the game starts, a random number or a stored pattern of these lights is switched on. Pressing any of the lights will toggle it and the adjacent lights. The goal of the puzzle is to switch all the lights off, preferably with as few button presses as possible. Technologies used: React, Typescript, Styled Components from Material UI",
+      "The game consists of a 5 by 5 grid of lights but also you can select 3 by 3 or 9 by 9 grid of lights. When the game starts, a random number or a stored pattern of these lights is switched on. Pressing any of the lights will toggle it and the adjacent lights. The goal of the puzzle is to switch all the lights off, preferably with as few button presses as possible.",
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ export const projects = [
       { src: postgrsql_img, alt: "Postgres Icon" },
     ],
     description:
-      "The app asks for an image URL from the user and detects and highlights faces in the image using its URL. Technologies used: React, Node.js Postman , PostgreSQL, Express",
+      "Full-stack React.JS web app that uses a Machine Learning API from Clarifai to identify faces on images. Allows users to create accounts and login to track number of images processed. Using a backend server developed using Node.JS and Express.JS, hosted REST API to handle requests and responses to process tasks (register account, login, detect faces on image).",
   },
   {
     id: 3,
@@ -51,7 +51,7 @@ export const projects = [
       { src: material_img, alt: "Material Icon" },
     ],
     description:
-      "Hangman is a classic game in which the player has to guess a word one letter at a time. You can play to get comfortable with the game.Technologies used: React, Typescript, Styled Components from Material UI",
+      "Hangman is a classic word guessing game in which players attempt to guess a hidden word by successive letter guesses. The game starts by displaying a number of blank spaces representing the unknown letters of the word. The player has to input letters into a text field and press a button to check if the letter is present in the hidden word.",
   },
 
   {

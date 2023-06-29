@@ -1,5 +1,5 @@
 import web_img from "../../assets/responsive-img3.png";
-import teamwork_img from "../../assets/responsive-img3.png";
+import teamwork_img from "../../assets/teamwork_responsive.png";
 
 import {
   Container,
