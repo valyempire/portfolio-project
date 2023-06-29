@@ -1,54 +1,55 @@
 import web_img from "../../assets/responsive-img3.png";
-import teamwork_img from "../../assets/teamwork_responsive.png";
-
+import { descriptionText, descriptionData } from "../../utils";
+import { Grid } from "@mui/material";
 import {
   Container,
-  Content,
-  LeftContent,
-  RightContent,
+  TopSection,
+  ImageWrapper,
+  TextWrapper,
   Text,
+  Button,
   Image,
+  Card,
+  CardContent,
+  CardDescription,
+  CardGroup,
+  CardImage,
+  CardImageWrapper,
+  CardTitle,
 } from "./HomeDescription.styles";
 
-export const HomeDescription: React.FC = () => {
+export const HomeDescription = () => {
   return (
     <Container>
-      <Content>
-        <LeftContent>
-          <Image src={web_img} alt="web-development" />
-        </LeftContent>
-        <RightContent>
-          <Text>
-            I'm passionate about building dynamic and responsive web
-            applications. I enjoy turning design concepts into fully functional
-            websites that provide a seamless user experience. Throughout my
-            learning journey, I've gained experience in front-end frameworks
-            such as React , as well as back-end technologies like Node.js and
-            Express. I'm constantly expanding my knowledge and exploring new
-            tools and libraries to stay up to date with the latest industry
-            trends. I have a strong problem-solving mindset and thrive in
-            collaborative environments. I love working with cross-functional
-            teams to bring ideas to life and contribute to the success of a
-            project.
-          </Text>
-        </RightContent>
-      </Content>
-      <Content>
-        <RightContent>
-          <Text>
-            I'm always eager to learn from experienced developers and embrace
-            feedback to improve my skills. As a junior developer, I'm excited to
-            contribute my enthusiasm, creativity, and dedication to a supportive
-            and growth-oriented team. I'm open to new challenges and ready to
-            tackle exciting projects that push the boundaries of what's possible
-            in web development. Let's connect and build the next generation of
-            innovative web solutions together!
-          </Text>
-        </RightContent>
-        <LeftContent>
-          <Image src={teamwork_img} alt="software-development-team-structure" />
-        </LeftContent>
-      </Content>
+      <TopSection container>
+        <Grid item xs={12} sm={6}>
+          <ImageWrapper>
+            <Image src={web_img} alt="Image" />
+          </ImageWrapper>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <TextWrapper>
+            <Text>{descriptionText}</Text>
+            <Button>VIEW PORTFOLIO</Button>
+          </TextWrapper>
+        </Grid>
+      </TopSection>
+
+      <CardGroup container>
+        {descriptionData.map((cardData, index) => (
+          <Grid item xs={12} sm={6} key={index}>
+            <Card>
+              <CardImage>
+                <CardImageWrapper src={cardData.image} alt="Card Image" />
+              </CardImage>
+              <CardContent>
+                <CardTitle>{cardData.title}</CardTitle>
+                <CardDescription>{cardData.description}</CardDescription>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
+      </CardGroup>
     </Container>
   );
 };

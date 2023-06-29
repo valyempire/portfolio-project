@@ -12,7 +12,6 @@ export const Card = styled("div")(() => ({
   marginTop: "30px",
   marginBottom: 50,
   fontSize: 21,
-
   "@media (max-width: 768px)": {
     flexDirection: "column",
     width: "80%",

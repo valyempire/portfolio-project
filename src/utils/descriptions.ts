@@ -29,3 +29,6 @@ export const descriptionData = [
     image: web_img4,
   },
 ];
+
+export const descriptionText =
+  "I'm passionate about building dynamic and responsive web applications. I enjoy turning design concepts into fully functional websites that provide a seamless user experience. I have a strong problem-solving mindset and thrive in collaborative environments. I love working with cross-functional teams to bring ideas to life and contribute to the success of a project.";
