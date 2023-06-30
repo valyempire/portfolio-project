@@ -1,5 +1,6 @@
 import { styled } from "@mui/system";
 import { Box, Grid } from "@mui/material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Container = styled(Box)(({ theme }) => ({
   display: "flex",
@@ -42,6 +43,10 @@ export const Image = styled("img")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     width: "100%",
   },
+}));
+
+export const Icon = styled(FontAwesomeIcon)(() => ({
+  color: "#213555",
 }));
 
 export const Text = styled("h2")(() => ({

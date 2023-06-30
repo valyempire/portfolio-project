@@ -10,8 +10,8 @@ import {
 
 export const HomeSkills = () => {
   const renderSkills = () => {
-    return skills.map((category, index) => (
-      <CategoryContainer key={index}>
+    return skills.map((category) => (
+      <CategoryContainer key={category.id}>
         <h3>{category.category}</h3>
         <SkillsList>
           {category.skills.map((skill, skillIndex) => (

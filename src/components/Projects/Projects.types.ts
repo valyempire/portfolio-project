@@ -1,5 +1,5 @@
 export interface ProjectData {
-  id: number;
+  id: string;
   name: string;
   image: string;
   github: string;

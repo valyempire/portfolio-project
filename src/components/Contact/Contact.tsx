@@ -166,7 +166,7 @@ export const Contact: React.FC = () => {
               name="user_email"
               required
             />
-            <Textarea placeholder="Message" name="message" />
+            <Textarea placeholder="Your Message" name="message" required />
             <SubmitButton type="submit">Send Message</SubmitButton>
           </ContactFormContainer>
           <ContactInfo>

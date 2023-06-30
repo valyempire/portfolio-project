@@ -16,7 +16,7 @@ export const HomeHeader: React.FC = () => {
         <Image src={my_img} alt="Profile Image" />
         <Description>
           Hi there! My name is Valerica Bocanel, and I'm a dedicated and
-          motivated junior web developer.
+          motivated Front End Developer.
         </Description>
       </AboutContainer>
     </HomeContainer>

@@ -11,12 +11,12 @@ import {
   Text,
   Button,
   Image,
+  Icon,
   Card,
   CardContent,
   CardDescription,
   CardGroup,
   CardImage,
-  CardImageWrapper,
   CardTitle,
 } from "./HomeDescription.styles";
 
@@ -40,11 +40,11 @@ export const HomeDescription = () => {
       </TopSection>
 
       <CardGroup container>
-        {descriptionData.map((cardData, index) => (
-          <Grid item xs={12} sm={6} key={index}>
+        {descriptionData.map((cardData) => (
+          <Grid item xs={12} sm={6} key={cardData.id}>
             <Card>
               <CardImage>
-                <CardImageWrapper src={cardData.image} alt="Card Image" />
+                <Icon icon={cardData.icon} size="2xl" />{" "}
               </CardImage>
               <CardContent>
                 <CardTitle>{cardData.title}</CardTitle>
