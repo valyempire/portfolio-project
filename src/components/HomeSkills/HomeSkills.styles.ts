@@ -1,53 +1,87 @@
 import { styled } from "@mui/system";
 
-export const SkillsContainer = styled("div")({
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  backgroundColor: "#3c416d",
-  color: "azure",
-  marginBottom: 20,
-});
-
-export const Description = styled("h2")(({ theme }) => ({
-  textAlign: "center",
-  width: "80%",
-  marginBottom: 20,
-  [theme.breakpoints.down("md")]: {
-    marginTop: 50,
-  },
-}));
-
-export const CategoriesContainer = styled("div")({
+export const Container = styled("div")(() => ({
   display: "flex",
   justifyContent: "center",
-  gap: 50,
+  alignItems: "center",
+  flexDirection: "column",
+  backgroundColor: "#F5EFE7",
+}));
+
+export const Title = styled("h1")({
+  textAlign: "center",
+  marginBottom: 50,
+});
+
+export const CardContainer = styled("div")({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "flex-start",
+  width: "70%",
+  flexDirection: "row",
+  flexWrap: "wrap",
+  gap: "1rem",
+});
+
+export const Card = styled("div")({
+  flex: "0 1 300px",
+  padding: "1rem",
+  borderRadius: "30px",
+});
+
+export const CardTitle = styled("h3")({
+  textAlign: "center",
+  marginBottom: "1rem",
+  fontSize: 30,
+});
+
+export const CardText = styled("p")({
+  textAlign: "center",
+  fontSize: 23,
+});
+
+export const ImageContainer = styled("div")({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
   flexWrap: "wrap",
 });
 
-export const CategoryContainer = styled("div")(({ theme }) => ({
-  flex: 1,
-  textAlign: "center",
-  border: "1px solid #ccc",
-  padding: 79,
-  margin: 17,
-  backgroundColor: "#3c416d",
-  color: "azure",
-  borderRadius: 75,
-  fontSize: 30,
-  whiteSpace: "nowrap",
-  [theme.breakpoints.down("md")]: {
-    flexBasis: "100%",
+export const Image = styled("img")({
+  width: 80,
+  transition: "transform 0.3s",
+  marginBottom: 10,
+  marginLeft: 20,
+  "&:hover": {
+    transform: "scale(1.1)",
   },
-}));
-
-export const SkillsList = styled("ul")({
-  listStyleType: "none",
-  padding: 0,
-  margin: "10px 0",
 });
 
-export const SkillItem = styled("li")({
-  marginBottom: 10,
-  color: "azure",
+export const TextContainer = styled("div")({
+  textAlign: "center",
+  margin: "2rem",
+  fontSize: 24,
+});
+
+export const BottomTitle = styled("h3")({
+  marginBottom: "1rem",
+  fontSize: 25,
+});
+
+export const BottomText = styled("h4")({
+  marginBottom: "1rem",
+  fontSize: 24,
+});
+
+export const Button = styled("button")({
+  padding: "16px 32px",
+  backgroundColor: "#213555",
+  color: "#fff",
+  border: "none",
+  borderRadius: 15,
+  cursor: "pointer",
+  fontsize: 18,
+  "&:hover": {
+    backgroundColor: "#1b2a3a",
+  },
 });

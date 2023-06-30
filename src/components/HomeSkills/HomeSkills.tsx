@@ -1,4 +1,19 @@
+import { Link } from "react-router-dom";
 import { skills, description } from "../../utils";
+import {
+  Container,
+  Title,
+  CardContainer,
+  Card,
+  CardTitle,
+  CardText,
+  ImageContainer,
+  TextContainer,
+  BottomText,
+  BottomTitle,
+  Button,
+  Image,
+} from "./HomeSkills.styles";
 
 export const HomeSkills = () => {
   return (
@@ -24,7 +39,9 @@ export const HomeSkills = () => {
           Whether you have a question about a project or if you are interested
           in hiring or collaborating, I'd love to hear from you!
         </BottomText>
-        <Button>Message</Button>
+        <Link to="/contact">
+          <Button>Contact Me</Button>
+        </Link>
       </TextContainer>
     </Container>
   );

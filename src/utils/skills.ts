@@ -3,14 +3,14 @@ import html_img from "../assets/html.png";
 import css_img from "../assets/css.png";
 import javascript_img from "../assets/javascript.png";
 import react_img from "../assets/react.png";
-import bootstrap_img from "../assets/bootstrap.png";
+import bootstrap_img from "../assets/bootstrap-logo.png";
 import typescript_img from "../assets/typescript1.png";
 import material_img from "../assets/material_ui.png";
 import node_img from "../assets/node.png";
 import express_img from "../assets/express.png";
 import postgres_img from "../assets/Postgresql_elephant.svg.png";
 import vscode_img from "../assets/vscode.png";
-import github_img from "../assets/github.png";
+import github_img from "../assets/github3.png";
 import git_img from "../assets/git2.png";
 
 export const skills = [
