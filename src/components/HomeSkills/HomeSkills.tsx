@@ -1,31 +1,31 @@
-import { skills, description } from "../../utils/";
-import {
-  CategoryContainer,
-  SkillsContainer,
-  SkillsList,
-  SkillItem,
-  Description,
-  CategoriesContainer,
-} from "./HomeSkills.styles";
+import { skills, description } from "../../utils";
 
 export const HomeSkills = () => {
-  const renderSkills = () => {
-    return skills.map((category) => (
-      <CategoryContainer key={category.id}>
-        <h3>{category.category}</h3>
-        <SkillsList>
-          {category.skills.map((skill, skillIndex) => (
-            <SkillItem key={skillIndex}>{skill}</SkillItem>
-          ))}
-        </SkillsList>
-      </CategoryContainer>
-    ));
-  };
-
   return (
-    <SkillsContainer>
-      <Description>{description}</Description>
-      <CategoriesContainer>{renderSkills()}</CategoriesContainer>
-    </SkillsContainer>
+    <Container>
+      <Title>{description}</Title>
+
+      <CardContainer>
+        {skills.map((skill) => (
+          <Card key={skill.id}>
+            <CardTitle>{skill.title}</CardTitle>
+            <CardText>{skill.cardText}</CardText>
+            <ImageContainer>
+              {skill.images.map((image, i) => (
+                <Image key={i} src={image.src} alt={image.alt} />
+              ))}
+            </ImageContainer>
+          </Card>
+        ))}
+      </CardContainer>
+      <TextContainer>
+        <BottomTitle>Interested in hiring or collaborating?</BottomTitle>
+        <BottomText>
+          Whether you have a question about a project or if you are interested
+          in hiring or collaborating, I'd love to hear from you!
+        </BottomText>
+        <Button>Message</Button>
+      </TextContainer>
+    </Container>
   );
 };
