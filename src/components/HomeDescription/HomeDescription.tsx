@@ -12,6 +12,7 @@ import {
   Button,
   Image,
   Icon,
+  CardContainer,
   Card,
   CardContent,
   CardDescription,
@@ -42,15 +43,17 @@ export const HomeDescription = () => {
       <CardGroup container>
         {descriptionData.map((cardData) => (
           <Grid item xs={12} sm={6} key={cardData.id}>
-            <Card>
-              <CardImage>
-                <Icon icon={cardData.icon} size="2xl" />{" "}
-              </CardImage>
-              <CardContent>
-                <CardTitle>{cardData.title}</CardTitle>
-                <CardDescription>{cardData.description}</CardDescription>
-              </CardContent>
-            </Card>
+            <CardContainer>
+              <Card>
+                <CardImage>
+                  <Icon icon={cardData.icon} size="2xl" />{" "}
+                </CardImage>
+                <CardContent>
+                  <CardTitle>{cardData.title}</CardTitle>
+                  <CardDescription>{cardData.description}</CardDescription>
+                </CardContent>
+              </Card>
+            </CardContainer>
           </Grid>
         ))}
       </CardGroup>

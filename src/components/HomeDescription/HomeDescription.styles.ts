@@ -9,6 +9,7 @@ export const Container = styled(Box)(({ theme }) => ({
   justifyContent: "center",
   backgroundColor: "#d8c4b6",
   padding: theme.spacing(4),
+  marginBottom: 0,
 }));
 
 export const TopSection = styled(Grid)(({ theme }) => ({
@@ -69,12 +70,11 @@ export const Button = styled("button")(({ theme }) => ({
   },
 }));
 
-export const CardGroup = styled(Grid)(({ theme }) => ({
+export const CardGroup = styled(Grid)(() => ({
   display: "flex",
   justifyContent: "center",
-  flexWrap: "wrap",
-  marginLeft: -theme.spacing(2),
-  marginRight: -theme.spacing(2),
+  alignItems: "center",
+  // flexWrap: "wrap",
 }));
 
 export const Card = styled(Box)(({ theme }) => ({
@@ -84,7 +84,7 @@ export const Card = styled(Box)(({ theme }) => ({
   backgroundColor: "#D8C4B6",
   borderRadius: 30,
   boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-  width: "75%",
+  width: "65%",
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
     alignItems: "center",
@@ -97,9 +97,15 @@ export const Card = styled(Box)(({ theme }) => ({
   },
 }));
 
-export const CardImage = styled("div")(({ theme }) => ({
-  flex: "0 0 80px",
-  marginRight: theme.spacing(2),
+export const CardImage = styled("div")(() => ({
+  marginRight: 8,
+}));
+
+export const CardContainer = styled("div")(() => ({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  marginBottom: 0,
 }));
 
 export const CardImageWrapper = styled("img")(() => ({

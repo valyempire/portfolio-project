@@ -6,11 +6,14 @@ export const Container = styled("div")(() => ({
   alignItems: "center",
   flexDirection: "column",
   backgroundColor: "#F5EFE7",
+  maxWidth: "100%",
 }));
 
 export const Title = styled("h1")({
   textAlign: "center",
   marginBottom: 50,
+  marginTop: 35,
+  maxWidth: 812,
 });
 
 export const CardContainer = styled("div")({
@@ -80,7 +83,8 @@ export const Button = styled("button")({
   border: "none",
   borderRadius: 15,
   cursor: "pointer",
-  fontsize: 18,
+  fontSize: 15,
+  textTransform: "uppercase",
   "&:hover": {
     backgroundColor: "#1b2a3a",
   },

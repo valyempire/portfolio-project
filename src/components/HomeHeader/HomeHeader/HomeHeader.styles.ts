@@ -1,57 +1,49 @@
 import { styled } from "@mui/system";
+import { Grid, Typography } from "@mui/material";
 
-export const Container = styled("div")(() => ({
+export const Container = styled(Grid)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   height: "100vh",
   backgroundColor: "#213555",
   color: "azure",
+  padding: theme.spacing(4),
 }));
 
-export const AboutContainer = styled("div")(() => ({
+export const AboutContainer = styled(Grid)({
   textAlign: "center",
-  minHeight: "100vh",
+  minHeight: "100%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-}));
+});
 
-export const Title = styled("h3")(() => ({
-  textAlign: "center",
-  marginBottom: "1rem",
+export const Title = styled(Typography)(({ theme }) => ({
+  marginBottom: theme.spacing(2),
   fontSize: 35,
 }));
 
-export const Image = styled("img")(() => ({
+export const Image = styled("img")(({ theme }) => ({
   width: 605,
   height: 323,
   borderRadius: "60%",
-  marginBottom: "1rem",
-}));
-
-/**
- * 
-    width: 580px;
-    height: 287px;
-    border-radius: 74%;
-    margin-bottom: 1rem;
- */
-
-export const Description = styled("p")(({ theme }) => ({
-  textAlign: "center",
-  fontSize: 25,
-  marginBottom: 50,
+  marginBottom: theme.spacing(2),
   [theme.breakpoints.down("md")]: {
-    marginBottom: 100,
+    width: "100%",
+    height: "auto",
   },
 }));
 
-export const HomeContainer = styled(Container)(() => ({
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  height: "100vh",
+export const Description = styled(Typography)(({ theme }) => ({
+  fontSize: 25,
+  marginBottom: theme.spacing(4),
+}));
+
+export const HomeContainer = styled(Container)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    justifyContent: "flex-start",
+    padding: theme.spacing(2),
+  },
 }));

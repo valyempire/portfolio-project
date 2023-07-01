@@ -1,14 +1,13 @@
-import React from "react";
 import my_img from "../../../assets/vali.img3.png";
 import {
   HomeContainer,
+  AboutContainer,
   Title,
   Image,
-  AboutContainer,
   Description,
 } from "./HomeHeader.styles";
 
-export const HomeHeader: React.FC = () => {
+export const HomeHeader = () => {
   return (
     <HomeContainer>
       <AboutContainer>
