@@ -10,6 +10,7 @@ import {
   Textarea,
   SubmitButton,
   ContactInfo,
+  ContactInfoContainer,
 } from "./Contact.style";
 
 export const Contact: React.FC = () => {
@@ -63,10 +64,12 @@ export const Contact: React.FC = () => {
             <Textarea placeholder="Your Message" name="message" required />
             <SubmitButton type="submit">Send Message</SubmitButton>
           </ContactFormContainer>
-          <ContactInfo>
-            <p>Email: bocanel.valerica92@gmail.com</p>
-            <p>Phone: (+40) 741412636</p>
-          </ContactInfo>
+          <ContactInfoContainer>
+            <ContactInfo>
+              <p>Email: bocanel.valerica92@gmail.com</p>
+              <p>Phone: (+40) 741412636</p>
+            </ContactInfo>
+          </ContactInfoContainer>
         </Grid>
       </Grid>
     </PageContainer>
