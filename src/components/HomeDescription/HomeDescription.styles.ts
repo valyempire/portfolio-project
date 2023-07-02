@@ -48,6 +48,7 @@ export const Image = styled("img")(({ theme }) => ({
 
 export const Icon = styled(FontAwesomeIcon)(() => ({
   color: "#213555",
+  height: 40,
 }));
 
 export const Text = styled("h2")(() => ({

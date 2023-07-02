@@ -7,6 +7,7 @@ import {
   ContactFormContainer,
   Title,
   Input,
+  InputContainer,
   Textarea,
   SubmitButton,
   ContactInfo,
@@ -49,18 +50,20 @@ export const Contact: React.FC = () => {
         <Grid item xs={12} sm={6}>
           <ContactFormContainer ref={form} onSubmit={sendEmail}>
             <Title>Contact Me</Title>
-            <Input
-              type="text"
-              placeholder="Full Name"
-              name="user_name"
-              required
-            />
-            <Input
-              type="email"
-              placeholder="Email"
-              name="user_email"
-              required
-            />
+            <InputContainer>
+              <Input
+                type="text"
+                placeholder="Full Name"
+                name="user_name"
+                required
+              />
+              <Input
+                type="email"
+                placeholder="Email"
+                name="user_email"
+                required
+              />
+            </InputContainer>
             <Textarea placeholder="Your Message" name="message" required />
             <SubmitButton type="submit">Send Message</SubmitButton>
           </ContactFormContainer>

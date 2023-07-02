@@ -5,7 +5,7 @@ export const PageContainer = styled("div")({
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  minHeight: "85vh",
+  minHeight: "84vh",
   backgroundColor: "#213555",
 });
 
@@ -43,6 +43,14 @@ export const Title = styled("h2")({
   color: "dark",
 });
 
+export const InputContainer = styled("div")({
+  display: "flex",
+  justifyContent: "space-between",
+  width: "100%",
+  marginBottom: "10px",
+  gap: 20,
+});
+
 export const Input = styled("input")({
   width: "100%",
   padding: "10px",
@@ -54,9 +62,9 @@ export const Input = styled("input")({
 });
 
 export const Textarea = styled("textarea")({
-  width: "100%",
+  width: "97%",
   padding: "10px",
-  margin: "10px 0",
+  // margin: "10px 0",
   borderRadius: "4px",
   fontSize: "16px",
   minHeight: "100px",
@@ -85,12 +93,4 @@ export const ContactInfo = styled("div")({
     margin: "10px 0",
     fontSize: 20,
   },
-});
-
-export const InputContainer = styled("div")({
-  display: "flex",
-  justifyContent: "space-between",
-  width: "100%",
-  marginBottom: "10px",
-  gap: 20,
 });
