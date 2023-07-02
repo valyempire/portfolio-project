@@ -7,11 +7,13 @@ import bootstrap_img from "../assets/bootstrap-logo.png";
 import typescript_img from "../assets/typescript1.png";
 import material_img from "../assets/material_ui.png";
 import node_img from "../assets/node.png";
-import express_img from "../assets/express.png";
+import express_img from "../assets/expressjs.png";
 import postgres_img from "../assets/Postgresql_elephant.svg.png";
-import vscode_img from "../assets/vscode.png";
-import github_img from "../assets/github3.png";
-import git_img from "../assets/git2.png";
+import vscode_img from "../assets/Visual_Studio_Code_1.35_icon.svg.png";
+import github_img from "../assets/github1.png";
+import git_img from "../assets/git3.png";
+import vite_img from "../assets/Vitejs-logo.svg.png";
+import chrome_devtool_img from "../assets/chrome_devtool.png";
 
 export const skills = [
   {
@@ -50,6 +52,8 @@ export const skills = [
       { src: vscode_img, alt: "vscode" },
       { src: github_img, alt: "github" },
       { src: git_img, alt: "git" },
+      { src: vite_img, alt: "vite" },
+      { src: chrome_devtool_img, alt: "devtool" },
     ],
   },
 ];
