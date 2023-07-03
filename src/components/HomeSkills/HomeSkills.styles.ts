@@ -9,11 +9,24 @@ export const Container = styled("div")(() => ({
   maxWidth: "100%",
 }));
 
-export const Title = styled("h1")({
-  textAlign: "center",
-  marginBottom: 50,
-  marginTop: 35,
-  maxWidth: 812,
+export const Title = styled("h2")(({ theme }) => {
+  return {
+    textAlign: "center",
+    marginBottom: 50,
+    marginTop: 35,
+    maxWidth: 812,
+    fontWeight: 200,
+    fontSize: 27,
+    [theme.breakpoints.down("md")]: {
+      marginRight: 64,
+      marginLeft: 64,
+    },
+    [theme.breakpoints.down("sm")]: {
+      marginRight: 4,
+      marginLeft: 4,
+      maxWidth: 260,
+    },
+  };
 });
 
 export const CardContainer = styled("div")({
@@ -53,10 +66,11 @@ export const ImageContainer = styled("div")({
 export const Image = styled("img")({
   width: 80,
   transition: "transform 0.3s",
-  marginBottom: 10,
+  marginBottom: 15,
   marginLeft: 20,
   "&:hover": {
     transform: "scale(1.1)",
+    cursor: "pointer",
   },
 });
 
@@ -69,11 +83,13 @@ export const TextContainer = styled("div")({
 export const BottomTitle = styled("h3")({
   marginBottom: "1rem",
   fontSize: 25,
+  fontWeight: 200,
 });
 
 export const BottomText = styled("h4")({
   marginBottom: "1rem",
   fontSize: 24,
+  fontWeight: 200,
 });
 
 export const Button = styled("button")({
@@ -86,6 +102,6 @@ export const Button = styled("button")({
   fontSize: 15,
   textTransform: "uppercase",
   "&:hover": {
-    backgroundColor: "#1b2a3a",
+    backgroundColor: "#316ab6",
   },
 });

@@ -18,7 +18,7 @@ export const Card = styled("div")(() => ({
   },
 }));
 
-export const Left = styled("div")(() => ({
+export const LeftContetnt = styled("div")(() => ({
   width: "50%",
   justifyContent: "center",
   alignItems: "center",
@@ -27,7 +27,7 @@ export const Left = styled("div")(() => ({
   },
 }));
 
-export const Right = styled("div")(() => ({
+export const RightContent = styled("div")(() => ({
   width: "50%",
   display: "flex",
   flexDirection: "column",
@@ -55,21 +55,39 @@ export const Title = styled("h2")(() => ({
 export const Description = styled("p")(() => ({
   fontSize: 22,
   maxWidth: 490,
+  marginLeft: 10,
 }));
 
 export const Links = styled("div")(() => ({
   display: "flex",
-  justifyContent: "space-between",
+  justifyContent: "center",
   marginTop: "16px",
 }));
+
+// export const Link = styled("a")(() => ({
+//   textDecoration: "none",
+//   color: "#000",
+//   padding: "8px",
+//   borderRadius: "4px",
+//   marginLeft: 60,
+//   marginRight: 60,
+//   fontSize: 21,
+//   "&:hover": {
+//     transform: "scale(1.3)",
+//   },
+//   "@media (max-width: 768px)": {
+//     marginLeft: "auto",
+//     marginRight: "auto",
+//   },
+// }));
 
 export const Link = styled("a")(() => ({
   textDecoration: "none",
   color: "#000",
   padding: "8px",
   borderRadius: "4px",
-  marginLeft: 60,
-  marginRight: 60,
+  marginLeft: "8px",
+  marginRight: "8px",
   fontSize: 21,
   "&:hover": {
     transform: "scale(1.3)",

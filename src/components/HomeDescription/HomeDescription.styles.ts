@@ -48,9 +48,12 @@ export const Text = styled("h2")(() => ({
 export const Image = styled("img")(({ theme }) => ({
   height: 337,
   width: 545,
-  marginTop: theme.spacing(4),
   [theme.breakpoints.down("md")]: {
     width: "100%",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: 253,
+    height: 181,
   },
 }));
 
@@ -64,9 +67,10 @@ export const Button = styled("button")(({ theme }) => ({
   backgroundColor: "#213555",
   color: "#fefefe",
   border: "none",
-  borderRadius: 5,
+  borderRadius: 15,
   cursor: "pointer",
   marginLeft: theme.spacing(4),
+  transition: "background-color 0.3s, color 0.3s",
   "&:hover": {
     backgroundColor: "#F5EFE7",
     color: "black",
@@ -84,7 +88,7 @@ export const Card = styled(Box)(({ theme }) => ({
   display: "flex",
   margin: theme.spacing(2),
   padding: theme.spacing(4),
-  backgroundColor: "#fff",
+  backgroundColor: "#9ad5ff",
   borderRadius: 30,
   boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
   width: "65%",
@@ -96,6 +100,8 @@ export const Card = styled(Box)(({ theme }) => ({
   transition: "transform 0.3s, background-color 0.3s",
   "&:hover": {
     transform: "scale(1.05)",
+    backgroundColor: "#fff",
+    cursor: "pointer",
   },
 }));
 
@@ -125,6 +131,6 @@ export const CardTitle = styled("h3")(({ theme }) => ({
 }));
 
 export const CardDescription = styled("p")(() => ({
-  fontSize: 25,
+  fontSize: 20,
   maxWidth: 490,
 }));

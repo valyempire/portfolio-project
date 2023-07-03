@@ -59,4 +59,4 @@ export const skills = [
 ];
 
 export const description =
-  "This is my programming skills and tools. I have acquired these skills through working on projects with my mentor and also collaborating with my fellow colleagues during my studies.";
+  "These are my programming skills and tools. I have acquired these skills through working on projects with my mentor and also collaborating with my fellow colleagues during my studies.";

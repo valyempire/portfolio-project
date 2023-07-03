@@ -26,7 +26,7 @@ export const Footer = () => {
               <FontAwesomeIcon icon={faLinkedin} />
             </Link>
             <Link
-              href="https://github.com/"
+              href="https://github.com/valyempire"
               target="_blank"
               rel="noopener noreferrer"
             >
