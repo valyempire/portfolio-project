@@ -7,7 +7,7 @@ export const FooterContainer = styled("footer")(() => {
     bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: "#213555",
+    backgroundColor: "#316ab6 ",
     color: "azure",
     marginTop: -20,
     fontSize: 18,

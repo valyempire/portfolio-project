@@ -7,9 +7,10 @@ export const Container = styled(Box)(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  backgroundColor: "#d8c4b6",
+  backgroundColor: "#9ad5ff",
   padding: theme.spacing(4),
   marginBottom: 0,
+  // background: "linear-gradient(to bottom,#9ad5ff ,#8ab6d6,  #ffffff  )",
 }));
 
 export const TopSection = styled(Grid)(({ theme }) => ({
@@ -37,6 +38,13 @@ export const TextWrapper = styled("div")(() => ({
   textAlign: "left",
 }));
 
+export const Text = styled("h2")(() => ({
+  maxWidth: 510,
+  marginTop: 32,
+  fontSize: 24,
+  fontWeight: 300,
+}));
+
 export const Image = styled("img")(({ theme }) => ({
   height: 337,
   width: 545,
@@ -49,12 +57,6 @@ export const Image = styled("img")(({ theme }) => ({
 export const Icon = styled(FontAwesomeIcon)(() => ({
   color: "#213555",
   height: 40,
-}));
-
-export const Text = styled("h2")(() => ({
-  maxWidth: 510,
-  marginTop: 32,
-  fontSize: 25,
 }));
 
 export const Button = styled("button")(({ theme }) => ({
@@ -82,7 +84,7 @@ export const Card = styled(Box)(({ theme }) => ({
   display: "flex",
   margin: theme.spacing(2),
   padding: theme.spacing(4),
-  backgroundColor: "#D8C4B6",
+  backgroundColor: "#fff",
   borderRadius: 30,
   boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
   width: "65%",
@@ -94,7 +96,6 @@ export const Card = styled(Box)(({ theme }) => ({
   transition: "transform 0.3s, background-color 0.3s",
   "&:hover": {
     transform: "scale(1.05)",
-    backgroundColor: "#F5EFE7",
   },
 }));
 

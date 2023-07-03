@@ -5,7 +5,7 @@ interface MobileMenuProps {
   isOpen: boolean;
 }
 export const NavbarContainer = styled("nav")(() => ({
-  backgroundColor: "#213555",
+  backgroundColor: "#316ab6 ",
   color: "#fff",
   margin: 0,
 }));

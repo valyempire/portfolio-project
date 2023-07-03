@@ -6,7 +6,6 @@ export const PageContainer = styled("div")({
   justifyContent: "center",
   alignItems: "center",
   minHeight: "84vh",
-  backgroundColor: "#213555",
 });
 
 export const ContactFormContainer = styled("form")(({ theme }) => ({
