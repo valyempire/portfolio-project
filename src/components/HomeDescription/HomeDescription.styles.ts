@@ -2,76 +2,6 @@ import { styled } from "@mui/system";
 import { Box, Grid } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-// export const Container = styled(Box)(({ theme }) => ({
-//   display: "flex",
-//   flexDirection: "column",
-//   alignItems: "center",
-//   justifyContent: "center",
-//   backgroundColor: "#9ad5ff",
-//   padding: theme.spacing(4),
-//   marginBottom: 0,
-//   // background: "linear-gradient(to bottom,#9ad5ff ,#8ab6d6,  #ffffff  )",
-// }));
-
-// export const TopSection = styled(Grid)(({ theme }) => ({
-//   display: "flex",
-//   alignItems: "center",
-//   marginBottom: theme.spacing(4),
-//   justifyContent: "center",
-//   width: "100%",
-//   [theme.breakpoints.down("md")]: {
-//     flexDirection: "column",
-//     alignItems: "center",
-//     width: "100%",
-//   },
-// }));
-
-// export const ImageWrapper = styled("div")(({ theme }) => ({
-//   flex: 1,
-//   textAlign: "center",
-//   marginLeft: theme.spacing(4),
-//   [theme.breakpoints.down("md")]: {
-//     marginLeft: 0,
-//     marginTop: theme.spacing(4),
-//   },
-// }));
-
-// export const TextWrapper = styled("div")(() => ({
-//   flex: 1,
-//   textAlign: "left",
-// }));
-
-// export const Text = styled("h2")(({ theme }) => ({
-//   maxWidth: 510,
-//   marginTop: 32,
-//   fontSize: 24,
-//   fontWeight: 300,
-//   marginLeft: 53,
-//   [theme.breakpoints.down("md")]: {
-//     fontSize: 30,
-//     marginLeft: -127,
-//     marginRight: -127,
-//     maxWidth: 630,
-//   },
-//   [theme.breakpoints.down("sm")]: {
-//     fontSize: 20,
-
-//     maxWidth: 230,
-//   },
-// }));
-
-// export const Image = styled("img")(({ theme }) => ({
-//   height: 337,
-//   width: 545,
-//   [theme.breakpoints.down("md")]: {
-//     width: "100%",
-//   },
-//   [theme.breakpoints.down("sm")]: {
-//     width: 253,
-//     height: 181,
-//   },
-// }));
-
 export const Container = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
@@ -115,17 +45,17 @@ export const Text = styled("h2")(({ theme }) => ({
   marginTop: 32,
   fontSize: 24,
   fontWeight: 300,
-  marginLeft: 53,
+  marginLeft: 0,
   [theme.breakpoints.down("md")]: {
     fontSize: 24,
     marginLeft: 0,
     marginRight: 0,
-    maxWidth: "100%",
+    maxWidth: 380,
     textAlign: "center",
   },
   [theme.breakpoints.down("sm")]: {
-    fontSize: 20,
-    maxWidth: 230,
+    fontSize: 19,
+    maxWidth: 251,
   },
 }));
 
@@ -140,7 +70,7 @@ export const Image = styled("img")(({ theme }) => ({
   },
   [theme.breakpoints.down("sm")]: {
     width: 253,
-    height: 181,
+    height: 165,
     marginLeft: 0,
   },
 }));

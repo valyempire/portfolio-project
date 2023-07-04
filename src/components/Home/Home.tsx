@@ -1,5 +1,5 @@
-import { HomeHeader } from "../HomeHeader/HomeHeader";
-import { HomeDescription } from "../HomeDescription/HomeDescription";
+import { HomeHeader } from "../HomeHeader";
+import { HomeDescription } from "../HomeDescription";
 import { HomeSkills } from "../HomeSkills";
 import { Grid } from "@mui/material";
 

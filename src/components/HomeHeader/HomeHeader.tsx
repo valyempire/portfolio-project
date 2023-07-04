@@ -1,4 +1,4 @@
-import my_img from "../../../assets/vali.img3.png";
+import my_img from "../../assets/vali.img3.png";
 import {
   HomeContainer,
   AboutContainer,

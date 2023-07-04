@@ -95,16 +95,22 @@ export const BottomText = styled("h4")({
   fontWeight: 200,
 });
 
-export const Button = styled("button")({
-  padding: "16px 32px",
-  backgroundColor: "#213555",
-  color: "#fff",
-  border: "none",
-  borderRadius: 15,
-  cursor: "pointer",
-  fontSize: 15,
-  textTransform: "uppercase",
-  "&:hover": {
-    backgroundColor: "#316ab6",
-  },
+export const Button = styled("button")(({ theme }) => {
+  return {
+    padding: "16px 32px",
+    backgroundColor: "#213555",
+    color: "#fff",
+    border: "none",
+    borderRadius: 15,
+    cursor: "pointer",
+    fontSize: 15,
+    textTransform: "uppercase",
+    "&:hover": {
+      backgroundColor: "#316ab6",
+    },
+
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 13,
+    },
+  };
 });

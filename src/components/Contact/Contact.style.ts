@@ -18,7 +18,7 @@ export const ContactFormContainer = styled("form")(({ theme }) => ({
   // marginBottom: "40px",
   border: "1px solid #f1f1f1",
   marginTop: 40,
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down("sm")]: {
     marginRight: 15,
     marginLeft: 15,
   },
@@ -80,6 +80,7 @@ export const SubmitButton = styled("button")({
   borderRadius: "4px",
   fontSize: "16px",
   cursor: "pointer",
+  marginTop: 10,
   "&:hover": {
     backgroundColor: "#213555",
     color: "#FFFFFF",

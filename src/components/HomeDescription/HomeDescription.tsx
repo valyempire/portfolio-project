@@ -24,22 +24,21 @@ import {
 export const HomeDescription = () => {
   return (
     <Container>
-      <TopSection container className="VALI">
-        <Grid item xs={12} sm={6} className="VALI2">
+      <TopSection container>
+        <Grid item xs={12} sm={6}>
           <ImageWrapper className="VALI3">
-            <Image src={web_img} alt="Image" className="VALI4" />
+            <Image src={web_img} alt="Image" />
           </ImageWrapper>
         </Grid>
-        <Grid item xs={12} sm={6} className="VALI5">
+        <Grid item xs={12} sm={6}>
           <TextWrapper className="VALI6">
-            <Text className="VALI6">{descriptionText}</Text>
+            <Text>{descriptionText}</Text>
             <Link to="/projects">
               <Button>VIEW PROJECTS</Button>
             </Link>
           </TextWrapper>
         </Grid>
       </TopSection>
-
       <CardGroup container>
         {descriptionData.map((cardData) => (
           <Grid item xs={12} sm={6} key={cardData.id}>
