@@ -29,15 +29,18 @@ export const Title = styled("h2")(({ theme }) => {
   };
 });
 
-export const CardContainer = styled("div")({
+export const CardContainer = styled("div")(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "flex-start",
-  width: "70%",
+  // width: "70%",
   flexDirection: "row",
   flexWrap: "wrap",
   gap: "1rem",
-});
+  [theme.breakpoints.down("sm")]: {
+    maxWidth: 273,
+  },
+}));
 
 export const Card = styled("div")({
   flex: "0 1 300px",

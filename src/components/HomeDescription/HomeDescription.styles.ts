@@ -2,6 +2,76 @@ import { styled } from "@mui/system";
 import { Box, Grid } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+// export const Container = styled(Box)(({ theme }) => ({
+//   display: "flex",
+//   flexDirection: "column",
+//   alignItems: "center",
+//   justifyContent: "center",
+//   backgroundColor: "#9ad5ff",
+//   padding: theme.spacing(4),
+//   marginBottom: 0,
+//   // background: "linear-gradient(to bottom,#9ad5ff ,#8ab6d6,  #ffffff  )",
+// }));
+
+// export const TopSection = styled(Grid)(({ theme }) => ({
+//   display: "flex",
+//   alignItems: "center",
+//   marginBottom: theme.spacing(4),
+//   justifyContent: "center",
+//   width: "100%",
+//   [theme.breakpoints.down("md")]: {
+//     flexDirection: "column",
+//     alignItems: "center",
+//     width: "100%",
+//   },
+// }));
+
+// export const ImageWrapper = styled("div")(({ theme }) => ({
+//   flex: 1,
+//   textAlign: "center",
+//   marginLeft: theme.spacing(4),
+//   [theme.breakpoints.down("md")]: {
+//     marginLeft: 0,
+//     marginTop: theme.spacing(4),
+//   },
+// }));
+
+// export const TextWrapper = styled("div")(() => ({
+//   flex: 1,
+//   textAlign: "left",
+// }));
+
+// export const Text = styled("h2")(({ theme }) => ({
+//   maxWidth: 510,
+//   marginTop: 32,
+//   fontSize: 24,
+//   fontWeight: 300,
+//   marginLeft: 53,
+//   [theme.breakpoints.down("md")]: {
+//     fontSize: 30,
+//     marginLeft: -127,
+//     marginRight: -127,
+//     maxWidth: 630,
+//   },
+//   [theme.breakpoints.down("sm")]: {
+//     fontSize: 20,
+
+//     maxWidth: 230,
+//   },
+// }));
+
+// export const Image = styled("img")(({ theme }) => ({
+//   height: 337,
+//   width: 545,
+//   [theme.breakpoints.down("md")]: {
+//     width: "100%",
+//   },
+//   [theme.breakpoints.down("sm")]: {
+//     width: 253,
+//     height: 181,
+//   },
+// }));
+
 export const Container = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
@@ -10,16 +80,18 @@ export const Container = styled(Box)(({ theme }) => ({
   backgroundColor: "#9ad5ff",
   padding: theme.spacing(4),
   marginBottom: 0,
-  // background: "linear-gradient(to bottom,#9ad5ff ,#8ab6d6,  #ffffff  )",
 }));
 
 export const TopSection = styled(Grid)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   marginBottom: theme.spacing(4),
+  justifyContent: "center",
+  width: "100%",
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
     alignItems: "center",
+    width: "100%",
   },
 }));
 
@@ -38,22 +110,38 @@ export const TextWrapper = styled("div")(() => ({
   textAlign: "left",
 }));
 
-export const Text = styled("h2")(() => ({
+export const Text = styled("h2")(({ theme }) => ({
   maxWidth: 510,
   marginTop: 32,
   fontSize: 24,
   fontWeight: 300,
+  marginLeft: 53,
+  [theme.breakpoints.down("md")]: {
+    fontSize: 24,
+    marginLeft: 0,
+    marginRight: 0,
+    maxWidth: "100%",
+    textAlign: "center",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: 20,
+    maxWidth: 230,
+  },
 }));
 
 export const Image = styled("img")(({ theme }) => ({
   height: 337,
   width: 545,
   [theme.breakpoints.down("md")]: {
-    width: "100%",
+    // width: "100%",
+    height: 361,
+    width: 516,
+    marginLeft: -92,
   },
   [theme.breakpoints.down("sm")]: {
     width: 253,
     height: 181,
+    marginLeft: 0,
   },
 }));
 
@@ -69,11 +157,19 @@ export const Button = styled("button")(({ theme }) => ({
   border: "none",
   borderRadius: 15,
   cursor: "pointer",
-  marginLeft: theme.spacing(4),
+  marginLeft: 54,
   transition: "background-color 0.3s, color 0.3s",
   "&:hover": {
     backgroundColor: "#F5EFE7",
     color: "black",
+  },
+  [theme.breakpoints.down("md")]: {
+    marginLeft: 101,
+    marginTop: 10,
+  },
+  [theme.breakpoints.down("sm")]: {
+    marginLeft: 32,
+    marginTop: 10,
   },
 }));
 
