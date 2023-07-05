@@ -7,7 +7,7 @@ export const Container = styled(Box)(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  backgroundColor: "#9ad5ff",
+  backgroundColor: "#fff",
   padding: theme.spacing(4),
   marginBottom: 0,
 }));
@@ -82,8 +82,8 @@ export const Icon = styled(FontAwesomeIcon)(() => ({
 
 export const Button = styled("button")(({ theme }) => ({
   padding: theme.spacing(2, 4),
-  backgroundColor: "#213555",
-  color: "#fefefe",
+  backgroundColor: "#0c2e5c",
+  color: "#fff",
   border: "none",
   borderRadius: 15,
   cursor: "pointer",
@@ -114,20 +114,21 @@ export const Card = styled(Box)(({ theme }) => ({
   display: "flex",
   margin: theme.spacing(2),
   padding: theme.spacing(4),
-  backgroundColor: "#9ad5ff",
+  backgroundColor: "#fff",
   borderRadius: 30,
-  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+  boxShadow: "0px 3px 17px 4px rgba(0, 0, 0, 0.1)",
   width: "65%",
+
+  transition: "transform 0.3s, background-color 0.3s",
+  "&:hover": {
+    transform: "scale(1.05)",
+    // backgroundColor: "#F5EFE7",
+    cursor: "pointer",
+  },
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
     alignItems: "center",
     textAlign: "center",
-  },
-  transition: "transform 0.3s, background-color 0.3s",
-  "&:hover": {
-    transform: "scale(1.05)",
-    backgroundColor: "#fff",
-    cursor: "pointer",
   },
 }));
 

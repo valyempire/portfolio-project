@@ -9,26 +9,6 @@ export const Container = styled("div")(() => ({
   maxWidth: "100%",
 }));
 
-export const Title = styled("h2")(({ theme }) => {
-  return {
-    textAlign: "center",
-    marginBottom: 50,
-    marginTop: 35,
-    maxWidth: 812,
-    fontWeight: 200,
-    fontSize: 27,
-    [theme.breakpoints.down("md")]: {
-      marginRight: 64,
-      marginLeft: 64,
-    },
-    [theme.breakpoints.down("sm")]: {
-      marginRight: 4,
-      marginLeft: 4,
-      maxWidth: 260,
-    },
-  };
-});
-
 export const CardContainer = styled("div")(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
@@ -56,17 +36,39 @@ export const CardHeader = styled("div")({
 
 export const Logo = styled("img")(({ theme }) => ({
   width: 50,
-  marginRight: 10,
+  marginRight: 15,
+  marginLeft: -14,
   [theme.breakpoints.down("sm")]: {
     marginRight: 6,
-    marginLeft: -25,
+    marginLeft: -34,
   },
 }));
+
+export const Title = styled("h2")(({ theme }) => {
+  return {
+    // textAlign: "center",
+    marginBottom: 50,
+    marginTop: 35,
+    maxWidth: 812,
+    fontWeight: 200,
+    fontSize: 27,
+    [theme.breakpoints.down("md")]: {
+      marginRight: 64,
+      marginLeft: 64,
+    },
+    [theme.breakpoints.down("sm")]: {
+      marginRight: 4,
+      marginLeft: 4,
+      maxWidth: 260,
+    },
+  };
+});
 
 export const CardTitle = styled("h3")({
   textAlign: "center",
   marginBottom: "1rem",
   fontSize: 30,
+  marginLeft: 8,
 });
 
 export const CardText = styled("p")({
@@ -113,7 +115,7 @@ export const BottomText = styled("h4")({
 export const Button = styled("button")(({ theme }) => {
   return {
     padding: "16px 32px",
-    backgroundColor: "#213555",
+    backgroundColor: "#0c2e5c",
     color: "#fff",
     border: "none",
     borderRadius: 15,

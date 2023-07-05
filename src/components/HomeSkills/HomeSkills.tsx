@@ -20,8 +20,9 @@ import {
 export const HomeSkills = () => {
   return (
     <Container>
-      <Title>{description}</Title>
-
+      <div>
+        <Title>{description}</Title>
+      </div>
       <CardContainer>
         {skills.map((skill) => (
           <Card key={skill.id}>

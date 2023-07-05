@@ -6,7 +6,7 @@ export const HomeContainer = styled(Grid)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   height: "100vh",
-  backgroundColor: "#316ab6",
+  backgroundColor: "#0c2e5c",
   color: "azure",
   padding: theme.spacing(4),
   [theme.breakpoints.down("md")]: {

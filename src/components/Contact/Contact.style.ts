@@ -32,17 +32,6 @@ export const ContactFormContainer = styled("form")(({ theme }) => ({
   },
 }));
 
-export const ContactInfoContainer = styled("div")(({ theme }) => ({
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "flex-start",
-  marginTop: theme.spacing(2),
-  color: "#FFFFFF",
-  [theme.breakpoints.down("md")]: {
-    marginLeft: 20,
-  },
-}));
-
 export const Title = styled("h2")({
   fontSize: "28px",
   fontWeight: "bold",
@@ -112,6 +101,21 @@ export const SubmitButton = styled("button")({
     color: "#FFFFFF",
   },
 });
+
+export const ContactInfoContainer = styled("div")(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "flex-start",
+  marginTop: theme.spacing(2),
+  color: "#FFFFFF",
+  [theme.breakpoints.down("md")]: {
+    marginLeft: 20,
+    marginBottom: 10,
+  },
+  [theme.breakpoints.down("sm")]: {
+    marginBottom: 35,
+  },
+}));
 
 export const ContactInfo = styled("div")({
   color: "#FFFFFF",
