@@ -5,7 +5,7 @@ export const PageContainer = styled("div")({
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  minHeight: "84vh",
+  minHeight: "74vh",
 });
 
 export const ContactFormContainer = styled("form")(({ theme }) => ({
@@ -18,9 +18,17 @@ export const ContactFormContainer = styled("form")(({ theme }) => ({
   // marginBottom: "40px",
   border: "1px solid #f1f1f1",
   marginTop: 40,
+
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+    padding: "40px",
+    marginLeft: -32,
+  },
   [theme.breakpoints.down("sm")]: {
-    marginRight: 15,
-    marginLeft: 15,
+    marginRight: 7,
+    marginLeft: 16,
+    width: "73%",
+    padding: 26,
   },
 }));
 
@@ -42,13 +50,28 @@ export const Title = styled("h2")({
   color: "dark",
 });
 
-export const InputContainer = styled("div")({
+export const InputContainer = styled("div")(({ theme }) => ({
   display: "flex",
-  justifyContent: "space-between",
-  width: "100%",
+  flexDirection: "row",
+  alignItems: "stretch",
   marginBottom: "10px",
   gap: 20,
-});
+  width: "100%",
+  fontSize: 20,
+  [theme.breakpoints.down("md")]: {
+    flexDirection: "column",
+    alignItems: "center",
+    gap: 0,
+    width: 395,
+    fontSize: 20,
+  },
+  [theme.breakpoints.down("sm")]: {
+    flexDirection: "column",
+    alignItems: "center",
+    gap: 0,
+    width: "100%",
+  },
+}));
 
 export const Input = styled("input")({
   width: "100%",
@@ -60,17 +83,20 @@ export const Input = styled("input")({
   border: "none",
 });
 
-export const Textarea = styled("textarea")({
+export const Textarea = styled("textarea")(({ theme }) => ({
   width: "97%",
   padding: "10px",
-  // margin: "10px 0",
   borderRadius: "4px",
   fontSize: "16px",
   minHeight: "100px",
   resize: "vertical",
   backgroundColor: "#FFFFFF",
   border: "none",
-});
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+    minHeight: "170px",
+  },
+}));
 
 export const SubmitButton = styled("button")({
   padding: "10px 20px",

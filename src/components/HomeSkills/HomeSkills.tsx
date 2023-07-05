@@ -26,13 +26,22 @@ export const HomeSkills = () => {
         {skills.map((skill) => (
           <Card key={skill.id}>
             <CardHeader>
-              <Logo src={skill.logo.src} alt={skill.logo.alt} />
+              <Logo
+                src={skill.logo.src}
+                alt={skill.logo.alt}
+                title={skill.logo.alt}
+              />
               <CardTitle>{skill.title}</CardTitle>
             </CardHeader>
             <CardText>{skill.cardText}</CardText>
             <ImageContainer>
               {skill.images.map((image, i) => (
-                <Image key={i} src={image.src} alt={image.alt} />
+                <Image
+                  key={i}
+                  src={image.src}
+                  alt={image.alt}
+                  title={image.alt}
+                />
               ))}
             </ImageContainer>
           </Card>
