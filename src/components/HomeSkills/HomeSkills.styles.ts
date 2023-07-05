@@ -48,6 +48,21 @@ export const Card = styled("div")({
   borderRadius: "30px",
 });
 
+export const CardHeader = styled("div")({
+  display: "flex",
+  alignItems: "center",
+  marginLeft: 57,
+});
+
+export const Logo = styled("img")(({ theme }) => ({
+  width: 50,
+  marginRight: 10,
+  [theme.breakpoints.down("sm")]: {
+    marginRight: 6,
+    marginLeft: -25,
+  },
+}));
+
 export const CardTitle = styled("h3")({
   textAlign: "center",
   marginBottom: "1rem",

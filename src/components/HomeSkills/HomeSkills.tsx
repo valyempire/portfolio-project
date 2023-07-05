@@ -5,6 +5,8 @@ import {
   Title,
   CardContainer,
   Card,
+  CardHeader,
+  Logo,
   CardTitle,
   CardText,
   ImageContainer,
@@ -23,7 +25,10 @@ export const HomeSkills = () => {
       <CardContainer>
         {skills.map((skill) => (
           <Card key={skill.id}>
-            <CardTitle>{skill.title}</CardTitle>
+            <CardHeader>
+              <Logo src={skill.logo.src} alt={skill.logo.alt} />
+              <CardTitle>{skill.title}</CardTitle>
+            </CardHeader>
             <CardText>{skill.cardText}</CardText>
             <ImageContainer>
               {skill.images.map((image, i) => (

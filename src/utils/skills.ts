@@ -14,10 +14,14 @@ import github_img from "../assets/github1.png";
 import git_img from "../assets/git3.png";
 import vite_img from "../assets/Vitejs-logo.svg.png";
 import chrome_devtool_img from "../assets/chrome_devtool.png";
+import frontend_img from "../assets/programming.png";
+import backend_img from "../assets/back-end.png";
+import tools_img from "../assets/setting.png";
 
 export const skills = [
   {
     id: uuid(),
+    logo: { src: frontend_img, alt: "material" },
     title: "Front End",
     cardText:
       "Enhancing web performance and responsiveness while addressing cross-browser compatibility challenges and ensuring accessibility are the primary focus of my work.",
@@ -33,6 +37,7 @@ export const skills = [
   },
   {
     id: uuid(),
+    logo: { src: backend_img, alt: "material" },
     title: "Back End",
     cardText:
       "I thrive on ensuring the security, scalability, and efficient handling of application logic in the back end. It's one of the aspects I find most enjoyable in my work.",
@@ -45,6 +50,7 @@ export const skills = [
   },
   {
     id: uuid(),
+    logo: { src: tools_img, alt: "material" },
     title: "Tools",
     cardText:
       "To create exceptional applications, I rely on outstanding development tools and dependable services. They form the foundation for building remarkable digital experiences.",
