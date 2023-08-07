@@ -1,5 +1,11 @@
+/**
+ * Imports styled
+ */
 import { styled } from "@mui/system";
 
+/**
+ * Styles the PageContainer
+ */
 export const PageContainer = styled("div")({
   display: "flex",
   flexDirection: "column",
@@ -8,6 +14,9 @@ export const PageContainer = styled("div")({
   minHeight: "74vh",
 });
 
+/**
+ * Styles the ContactFormContainer
+ */
 export const ContactFormContainer = styled("form")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
@@ -15,10 +24,8 @@ export const ContactFormContainer = styled("form")(({ theme }) => ({
   backgroundColor: "#F5EFE7;",
   padding: "20px",
   borderRadius: "30px",
-  // marginBottom: "40px",
   border: "1px solid #f1f1f1",
   marginTop: 40,
-
   [theme.breakpoints.down("md")]: {
     width: "100%",
     padding: "40px",
@@ -32,6 +39,9 @@ export const ContactFormContainer = styled("form")(({ theme }) => ({
   },
 }));
 
+/**
+ * Styles the Title
+ */
 export const Title = styled("h2")({
   fontSize: "28px",
   fontWeight: "bold",
@@ -39,6 +49,9 @@ export const Title = styled("h2")({
   color: "dark",
 });
 
+/**
+ * Styles the InputContainer
+ */
 export const InputContainer = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "row",
@@ -62,6 +75,9 @@ export const InputContainer = styled("div")(({ theme }) => ({
   },
 }));
 
+/**
+ * Styles the Input
+ */
 export const Input = styled("input")({
   width: "100%",
   padding: "10px",
@@ -72,6 +88,9 @@ export const Input = styled("input")({
   border: "none",
 });
 
+/**
+ * Styles the Textarea
+ */
 export const Textarea = styled("textarea")(({ theme }) => ({
   width: "97%",
   padding: "10px",
@@ -87,6 +106,9 @@ export const Textarea = styled("textarea")(({ theme }) => ({
   },
 }));
 
+/**
+ * Styles the SubmitButton
+ */
 export const SubmitButton = styled("button")({
   padding: "10px 20px",
   backgroundColor: "#4F709C",
@@ -102,6 +124,9 @@ export const SubmitButton = styled("button")({
   },
 });
 
+/**
+ * Styles the ContactInfoContainer
+ */
 export const ContactInfoContainer = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
@@ -117,6 +142,9 @@ export const ContactInfoContainer = styled("div")(({ theme }) => ({
   },
 }));
 
+/**
+ * Styles the ContactInfo
+ */
 export const ContactInfo = styled("div")({
   color: "#FFFFFF",
   "& p": {

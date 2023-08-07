@@ -1,7 +1,13 @@
-import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+
+/**
+ * Imports Material UI components
+ */
 import { Grid } from "@mui/material";
 
+/**
+ * Imports styled components
+ */
 import {
   PageContainer,
   ContactFormContainer,
@@ -14,9 +20,21 @@ import {
   ContactInfoContainer,
 } from "./Contact.style";
 
+/**
+ * Imports service that allows you to create a predefined set of emails via the dashboard, and then just trigger the emails
+ * from the code.
+ */
+import emailjs from "@emailjs/browser";
+
+/**
+ * Displays the component
+ */
 export const Contact: React.FC = () => {
   const form = useRef<HTMLFormElement | null>(null);
 
+  /**
+   * Handles the submission of an email form using the emailjs library
+   */
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -38,7 +56,6 @@ export const Contact: React.FC = () => {
           }
         );
     }
-
     if (e.target instanceof HTMLFormElement) {
       e.target.reset();
     }

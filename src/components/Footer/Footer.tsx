@@ -1,6 +1,6 @@
-import { Grid } from "@mui/material";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+/**
+ * Imports styled components
+ */
 import {
   FooterContainer,
   Title,
@@ -9,6 +9,24 @@ import {
   Text,
 } from "./Footer.styles";
 
+/**
+ * Imports Material UI components
+ */
+import { Grid } from "@mui/material";
+
+/**
+ * Imports Icons from react-fontawesome
+ */
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+/**
+ * Imports Icons from free-brands-svg-icons
+ */
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+
+/**
+ * Displays the component
+ */
 export const Footer = () => {
   return (
     <FooterContainer>

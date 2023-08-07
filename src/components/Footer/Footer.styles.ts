@@ -1,5 +1,11 @@
+/**
+ * Imports styled
+ */
 import { styled } from "@mui/system";
 
+/**
+ * Styles the FooterContainer
+ */
 export const FooterContainer = styled("footer")(() => {
   return {
     padding: "1rem",
@@ -14,12 +20,18 @@ export const FooterContainer = styled("footer")(() => {
   };
 });
 
+/**
+ * Styles the Title
+ */
 export const Title = styled("h3")(() => {
   return {
     marginBottom: "1rem",
   };
 });
 
+/**
+ * Styles the LinkContainer
+ */
 export const LinkContainer = styled("div")(() => {
   return {
     display: "flex",
@@ -28,6 +40,9 @@ export const LinkContainer = styled("div")(() => {
   };
 });
 
+/**
+ * Styles the Link
+ */
 export const Link = styled("a")(() => {
   return {
     color: "#ffffff",
@@ -40,6 +55,9 @@ export const Link = styled("a")(() => {
   };
 });
 
+/**
+ * Styles the Text
+ */
 export const Text = styled("h4")(() => {
   return {
     fontSize: 17,

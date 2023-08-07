@@ -1,7 +1,6 @@
 import {
   faGraduationCap,
   faCode,
-  // faGears,
   faCogs,
   faLightbulb,
 } from "@fortawesome/free-solid-svg-icons";
