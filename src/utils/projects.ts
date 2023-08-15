@@ -3,7 +3,7 @@
  */
 import lightsout_img from "../assets/projects/lights-out-min_gp9gvj.png";
 import smartbrain_img from "../assets/projects/smartbrain_resp.png";
-import hangman_img from "../assets/projects/hangman2.png";
+import hangman_img from "../assets/projects/hangman3.png";
 import yahtze_img from "../assets/projects/yahtzee-min_aokyls.png";
 import react_img from "../assets/react.png";
 import typescript_img from "../assets/typescript1.png";
@@ -11,6 +11,10 @@ import material_img from "../assets/material_ui.png";
 import postgrsql_img from "../assets/Postgresql_elephant.svg.png";
 import node_img from "../assets/node.png";
 import express_img from "../assets/expressjs.png";
+
+/**
+ * Imports uuid library for generating unique id
+ */
 import { v4 as uuid } from "uuid";
 
 /**
@@ -23,7 +27,7 @@ export const projects = [
     image: lightsout_img,
     github:
       "https://github.com/valyempire/lights-out-game-typescript-styled-components",
-    live: "https://github.com/valyempire/lights-out-game-typescript-styled-components",
+    live: "https://vali-lightsout.netlify.app/",
     icons: [
       { src: react_img, alt: "REACT" },
       { src: typescript_img, alt: "TYPESCRIPT" },
@@ -37,7 +41,7 @@ export const projects = [
     name: "SmartBrain",
     image: smartbrain_img,
     github: "https://github.com/valyempire/smart-brain-app-react",
-    live: "https://github.com/valyempire/smart-brain-app-react",
+    live: "https://vali-smartbrain.netlify.app",
     icons: [
       { src: react_img, alt: "REACT" },
       { src: node_img, alt: "NODE JS" },
@@ -53,7 +57,7 @@ export const projects = [
     image: hangman_img,
     github:
       "https://github.com/valyempire/hangman-typescript-styled-components",
-    live: "https://github.com/valyempire/hangman-typescript-styled-components",
+    live: "https://vali-hangman.netlify.app/",
     icons: [
       { src: react_img, alt: "REACT" },
       { src: typescript_img, alt: "TYPESCRIPT" },
@@ -70,7 +74,7 @@ export const projects = [
     github:
       "https://github.com/valyempire/yahtze-game-typescript-styled-components",
 
-    live: "https://github.com/valyempire/yahtze-game-typescript-styled-components",
+    live: "https://vali-yahtze.netlify.app/",
     icons: [
       { src: react_img, alt: "REACT" },
       { src: typescript_img, alt: "TYPESCRIPT" },

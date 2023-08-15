@@ -37,7 +37,7 @@ export const Footer = () => {
         <Grid item>
           <LinkContainer>
             <Link
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/valerica-bocanel/"
               target="_blank"
               rel="noopener noreferrer"
             >
