@@ -1,5 +1,12 @@
 import React, { useState } from "react";
+/**
+ * Imports NavLink from react router dom
+ */
 import { NavLink } from "react-router-dom";
+
+/**
+ * Imports styled components
+ */
 import {
   NavbarContainer,
   NavbarWrapper,
@@ -9,13 +16,25 @@ import {
   Menu,
 } from "./Navbar.styles";
 
+/**
+ * Displays the component
+ */
 export const Navbar: React.FC = () => {
+  /**
+   * Initializes the Menu state
+   */
   const [isMenuOpen, setMenuOpen] = useState(false);
 
+  /**
+   * Handles the Menu Toggle
+   */
   const handleMenuToggle = () => {
     setMenuOpen(!isMenuOpen);
   };
 
+  /**
+   * Handles the Menu when is mobile
+   */
   const handleLinkClick = () => {
     setMenuOpen(false);
   };

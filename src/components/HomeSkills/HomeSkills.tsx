@@ -1,5 +1,11 @@
+/**
+ * Imports Link from react router dom
+ */
 import { Link } from "react-router-dom";
-import { skills, description } from "../../utils";
+
+/**
+ * Imports styled components
+ */
 import {
   Container,
   Title,
@@ -17,6 +23,14 @@ import {
   Image,
 } from "./HomeSkills.styles";
 
+/**
+ * Imports data from utils
+ */
+import { skills, description } from "../../utils";
+
+/**
+ * Displays the component
+ */
 export const HomeSkills = () => {
   return (
     <Container>

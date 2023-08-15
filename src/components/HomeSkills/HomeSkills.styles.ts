@@ -1,5 +1,11 @@
+/**
+ * Imports styled
+ */
 import { styled } from "@mui/system";
 
+/**
+ * Styles the Container
+ */
 export const Container = styled("div")(() => ({
   display: "flex",
   justifyContent: "center",
@@ -9,11 +15,13 @@ export const Container = styled("div")(() => ({
   maxWidth: "100%",
 }));
 
+/**
+ * Styles the CardContainer
+ */
 export const CardContainer = styled("div")(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "flex-start",
-  // width: "70%",
   flexDirection: "row",
   flexWrap: "wrap",
   gap: "1rem",
@@ -22,18 +30,27 @@ export const CardContainer = styled("div")(({ theme }) => ({
   },
 }));
 
+/**
+ * Styles the Card
+ */
 export const Card = styled("div")({
   flex: "0 1 300px",
   padding: "1rem",
   borderRadius: "30px",
 });
 
+/**
+ * Styles the CardHeader
+ */
 export const CardHeader = styled("div")({
   display: "flex",
   alignItems: "center",
   marginLeft: 57,
 });
 
+/**
+ * Styles the Logo
+ */
 export const Logo = styled("img")(({ theme }) => ({
   width: 50,
   marginRight: 15,
@@ -44,9 +61,11 @@ export const Logo = styled("img")(({ theme }) => ({
   },
 }));
 
+/**
+ * Styles the Title
+ */
 export const Title = styled("h2")(({ theme }) => {
   return {
-    // textAlign: "center",
     marginBottom: 50,
     marginTop: 35,
     maxWidth: 812,
@@ -64,6 +83,9 @@ export const Title = styled("h2")(({ theme }) => {
   };
 });
 
+/**
+ * Styles the CardTitle
+ */
 export const CardTitle = styled("h3")({
   textAlign: "center",
   marginBottom: "1rem",
@@ -71,11 +93,17 @@ export const CardTitle = styled("h3")({
   marginLeft: 8,
 });
 
+/**
+ * Styles the CardText
+ */
 export const CardText = styled("p")({
   textAlign: "center",
   fontSize: 23,
 });
 
+/**
+ * Styles the ImageContainer
+ */
 export const ImageContainer = styled("div")({
   display: "flex",
   justifyContent: "center",
@@ -83,6 +111,9 @@ export const ImageContainer = styled("div")({
   flexWrap: "wrap",
 });
 
+/**
+ * Styles the Image
+ */
 export const Image = styled("img")({
   width: 80,
   transition: "transform 0.3s",
@@ -94,24 +125,36 @@ export const Image = styled("img")({
   },
 });
 
+/**
+ * Styles the TextContainer
+ */
 export const TextContainer = styled("div")({
   textAlign: "center",
   margin: "2rem",
   fontSize: 24,
 });
 
+/**
+ * Styles the BottomTitle
+ */
 export const BottomTitle = styled("h3")({
   marginBottom: "1rem",
   fontSize: 25,
   fontWeight: 200,
 });
 
+/**
+ * Styles the BottomText
+ */
 export const BottomText = styled("h4")({
   marginBottom: "1rem",
   fontSize: 24,
   fontWeight: 200,
 });
 
+/**
+ * Styles the Button
+ */
 export const Button = styled("button")(({ theme }) => {
   return {
     padding: "16px 32px",

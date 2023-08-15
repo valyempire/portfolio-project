@@ -1,8 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { projects, gitHubTitle, liveTitle } from "../../utils";
-import { ProjectData } from "./Projects.types";
+/**
+ * Imports styled components
+ */
 import {
   Card,
   LeftContetnt,
@@ -10,12 +8,31 @@ import {
   Description,
   Image,
   Title,
-  Links,
+  LinksContainer,
   Link,
   Icon,
   IconContainer,
 } from "./Projects.styles";
+/**
+ * Imports Icons from Fontawesome
+ */
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
+/**
+ * Imports files from utils
+ */
+import { projects, gitHubTitle, liveTitle } from "../../utils";
+
+/**
+ * Imports types
+ */
+import { ProjectData } from "./Projects.types";
+
+/**
+ * Displays the component
+ */
 export const Projects: React.FC = () => {
   const renderProjects = () => {
     return projects.map((project: ProjectData) => (
@@ -26,14 +43,14 @@ export const Projects: React.FC = () => {
         <RightContent>
           <Title>{project.name}</Title>
 
-          <Links>
+          <LinksContainer>
             <Link href={project.github} target="_blank" title={gitHubTitle}>
               <FontAwesomeIcon icon={faGithub} />
             </Link>
             <Link href={project.live} target="_blank" title={liveTitle}>
               <FontAwesomeIcon icon={faGlobe} />
             </Link>
-          </Links>
+          </LinksContainer>
 
           <Description>{project.description}</Description>
           <IconContainer>

@@ -1,3 +1,6 @@
+/**
+ * Imports icons from fortawesome
+ */
 import {
   faGraduationCap,
   faCode,
@@ -5,8 +8,14 @@ import {
   faLightbulb,
 } from "@fortawesome/free-solid-svg-icons";
 
+/**
+ * Imports uuid library for generating unique id
+ */
 import { v4 as uuid } from "uuid";
 
+/**
+ * Displays the data variable for descriptionData
+ */
 export const descriptionData = [
   {
     id: uuid(),

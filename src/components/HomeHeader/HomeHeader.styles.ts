@@ -1,6 +1,16 @@
+/**
+ * Imports styled
+ */
 import { styled } from "@mui/system";
+
+/**
+ * Imports Material UI components
+ */
 import { Grid, Typography } from "@mui/material";
 
+/**
+ * Styles the HomeContainer
+ */
 export const HomeContainer = styled(Grid)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
@@ -15,6 +25,9 @@ export const HomeContainer = styled(Grid)(({ theme }) => ({
   },
 }));
 
+/**
+ * Styles the AboutContainer
+ */
 export const AboutContainer = styled(Grid)({
   textAlign: "center",
   minHeight: "100%",
@@ -24,13 +37,19 @@ export const AboutContainer = styled(Grid)({
   alignItems: "center",
 });
 
+/**
+ * Styles the Title
+ */
 export const Title = styled(Typography)(({ theme }) => ({
   marginBottom: theme.spacing(2),
   fontSize: 35,
 }));
 
+/**
+ * Styles the Image
+ */
 export const Image = styled("img")(({ theme }) => ({
-  width: 605,
+  width: 670,
   height: 323,
   borderRadius: "60%",
   marginBottom: theme.spacing(2),
@@ -40,6 +59,9 @@ export const Image = styled("img")(({ theme }) => ({
   },
 }));
 
+/**
+ * Styles the Description
+ */
 export const Description = styled(Typography)(({ theme }) => ({
   fontSize: 25,
   marginBottom: -70,

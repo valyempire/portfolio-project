@@ -1,4 +1,6 @@
-import my_img from "../../assets/vali.img3.png";
+/**
+ * Imports styled components
+ */
 import {
   HomeContainer,
   AboutContainer,
@@ -7,6 +9,14 @@ import {
   Description,
 } from "./HomeHeader.styles";
 
+/**
+ * Imports image
+ */
+import my_img from "../../assets/vali5.png";
+
+/**
+ * Displays the component
+ */
 export const HomeHeader = () => {
   return (
     <HomeContainer>

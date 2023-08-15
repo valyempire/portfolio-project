@@ -1,15 +1,32 @@
+/**
+ * Imports styled
+ */
 import { styled } from "@mui/system";
+
+/**
+ * Import Link from react-router-dom
+ */
 import { Link } from "react-router-dom";
 
+/**
+ * Define MobileMenuProps interface
+ */
 interface MobileMenuProps {
   isOpen: boolean;
 }
+
+/**
+ * Styles the NavbarContainer
+ */
 export const NavbarContainer = styled("nav")(() => ({
   backgroundColor: "#0c2e5c ",
   color: "#fff",
   margin: 0,
 }));
 
+/**
+ * Styles the NavbarWrapper
+ */
 export const NavbarWrapper = styled("div")(() => ({
   display: "flex",
   justifyContent: "space-between",
@@ -17,12 +34,18 @@ export const NavbarWrapper = styled("div")(() => ({
   padding: "1rem",
 }));
 
+/**
+ * Styles the Logo
+ */
 export const Logo = styled(Link)(() => ({
   fontSize: "1.5rem",
   textDecoration: "none",
   color: "#fff",
 }));
 
+/**
+ * Styles the MenuIcon
+ */
 export const MenuIcon = styled("div")(() => ({
   display: "none",
 
@@ -49,6 +72,9 @@ export const MenuIcon = styled("div")(() => ({
   },
 }));
 
+/**
+ * Styles the Links
+ */
 export const Links = styled("div")(() => ({
   display: "flex",
   alignItems: "center",
@@ -76,6 +102,9 @@ export const Links = styled("div")(() => ({
   },
 }));
 
+/**
+ * Styles the MobileMenu
+ */
 export const MobileMenu = styled("div")<MobileMenuProps>(({ isOpen }) => ({
   display: isOpen ? "flex" : "none",
   flexDirection: "column",
@@ -107,6 +136,9 @@ export const MobileMenu = styled("div")<MobileMenuProps>(({ isOpen }) => ({
   },
 }));
 
+/**
+ * Styles the Menu
+ */
 export const Menu = styled("div")(() => ({
   display: "flex",
   flexDirection: "column",

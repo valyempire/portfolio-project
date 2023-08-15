@@ -1,6 +1,9 @@
+/**
+ * Imports images
+ */
 import lightsout_img from "../assets/projects/lights-out-min_gp9gvj.png";
-import smartbrain_img from "../assets/projects/smart2.png";
-import hangman_img from "../assets/projects/hangman_responsiv.png";
+import smartbrain_img from "../assets/projects/smartbrain_resp.png";
+import hangman_img from "../assets/projects/hangman2.png";
 import yahtze_img from "../assets/projects/yahtzee-min_aokyls.png";
 import react_img from "../assets/react.png";
 import typescript_img from "../assets/typescript1.png";
@@ -10,6 +13,9 @@ import node_img from "../assets/node.png";
 import express_img from "../assets/expressjs.png";
 import { v4 as uuid } from "uuid";
 
+/**
+ * Displays the data variable for projects
+ */
 export const projects = [
   {
     id: uuid(),

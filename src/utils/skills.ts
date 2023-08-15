@@ -1,4 +1,11 @@
+/**
+ * Imports uuid library for generating unique id
+ */
 import { v4 as uuid } from "uuid";
+
+/**
+ * Imports images
+ */
 import html_img from "../assets/html.png";
 import css_img from "../assets/css.png";
 import javascript_img from "../assets/javascript.png";
@@ -18,6 +25,9 @@ import frontend_img from "../assets/programming.png";
 import backend_img from "../assets/back-end.png";
 import tools_img from "../assets/setting.png";
 
+/**
+ * Displays the data variable for skills
+ */
 export const skills = [
   {
     id: uuid(),
@@ -45,7 +55,6 @@ export const skills = [
       { src: node_img, alt: "NODE JS" },
       { src: express_img, alt: "EXPRESS JS" },
       { src: postgres_img, alt: "POSTGRESQL" },
-      { src: typescript_img, alt: "TYPESCRIPT" },
     ],
   },
   {

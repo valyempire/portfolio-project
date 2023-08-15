@@ -1,8 +1,11 @@
-import web_img from "../../assets/responsive-img3.png";
-import { descriptionText, descriptionData } from "../../utils";
-import { Grid } from "@mui/material";
+/**
+ * Import Link from react-router-dom
+ */
 import { Link } from "react-router-dom";
 
+/**
+ * Imports styled components
+ */
 import {
   Container,
   TopSection,
@@ -21,6 +24,24 @@ import {
   CardTitle,
 } from "./HomeDescription.styles";
 
+/**
+ * Imports Material UI components
+ */
+import { Grid } from "@mui/material";
+
+/**
+ * Imports image
+ */
+import web_img from "../../assets/responsive-img3.png";
+
+/**
+ * Imports data from utils
+ */
+import { descriptionText, descriptionData } from "../../utils";
+
+/**
+ * Displays the component
+ */
 export const HomeDescription = () => {
   return (
     <Container>

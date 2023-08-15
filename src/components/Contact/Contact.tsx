@@ -37,8 +37,9 @@ export const Contact: React.FC = () => {
    */
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    // Check if the form reference is not null
     if (form.current !== null) {
+      // Use emailjs to send the form data as an email
       emailjs
         .sendForm(
           "service_sobiku4", // YOUR_SERVICE_ID
@@ -56,6 +57,7 @@ export const Contact: React.FC = () => {
           }
         );
     }
+    // Reset the form after submission
     if (e.target instanceof HTMLFormElement) {
       e.target.reset();
     }

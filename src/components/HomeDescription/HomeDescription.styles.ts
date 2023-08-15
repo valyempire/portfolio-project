@@ -1,7 +1,21 @@
+/**
+ * Imports styled
+ */
 import { styled } from "@mui/system";
+
+/**
+ * Imports Material UI components
+ */
 import { Box, Grid } from "@mui/material";
+
+/**
+ * Imports Icons from react-fontawesome
+ */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+/**
+ * Styles the Container
+ */
 export const Container = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
@@ -12,6 +26,9 @@ export const Container = styled(Box)(({ theme }) => ({
   marginBottom: 0,
 }));
 
+/**
+ * Styles the TopSection
+ */
 export const TopSection = styled(Grid)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
@@ -25,6 +42,9 @@ export const TopSection = styled(Grid)(({ theme }) => ({
   },
 }));
 
+/**
+ * Styles the ImageWrapper
+ */
 export const ImageWrapper = styled("div")(({ theme }) => ({
   flex: 1,
   textAlign: "center",
@@ -35,11 +55,17 @@ export const ImageWrapper = styled("div")(({ theme }) => ({
   },
 }));
 
+/**
+ * Styles the TextWrapper
+ */
 export const TextWrapper = styled("div")(() => ({
   flex: 1,
   textAlign: "left",
 }));
 
+/**
+ * Styles the Text
+ */
 export const Text = styled("h2")(({ theme }) => ({
   maxWidth: 510,
   marginTop: 32,
@@ -59,11 +85,13 @@ export const Text = styled("h2")(({ theme }) => ({
   },
 }));
 
+/**
+ * Styles the Image
+ */
 export const Image = styled("img")(({ theme }) => ({
   height: 337,
   width: 545,
   [theme.breakpoints.down("md")]: {
-    // width: "100%",
     height: 361,
     width: 516,
     marginLeft: -92,
@@ -75,11 +103,17 @@ export const Image = styled("img")(({ theme }) => ({
   },
 }));
 
+/**
+ * Styles the Icon
+ */
 export const Icon = styled(FontAwesomeIcon)(() => ({
   color: "#213555",
   height: 40,
 }));
 
+/**
+ * Styles the Button
+ */
 export const Button = styled("button")(({ theme }) => ({
   padding: theme.spacing(2, 4),
   backgroundColor: "#0c2e5c",
@@ -103,6 +137,9 @@ export const Button = styled("button")(({ theme }) => ({
   },
 }));
 
+/**
+ * Styles the CardGroup
+ */
 export const CardGroup = styled(Grid)(() => ({
   display: "flex",
   justifyContent: "center",
@@ -110,6 +147,9 @@ export const CardGroup = styled(Grid)(() => ({
   // flexWrap: "wrap",
 }));
 
+/**
+ * Styles the Card
+ */
 export const Card = styled(Box)(({ theme }) => ({
   display: "flex",
   margin: theme.spacing(2),
@@ -122,7 +162,6 @@ export const Card = styled(Box)(({ theme }) => ({
   transition: "transform 0.3s, background-color 0.3s",
   "&:hover": {
     transform: "scale(1.05)",
-    // backgroundColor: "#F5EFE7",
     cursor: "pointer",
   },
   [theme.breakpoints.down("md")]: {
@@ -132,10 +171,16 @@ export const Card = styled(Box)(({ theme }) => ({
   },
 }));
 
+/**
+ * Styles the CardImage
+ */
 export const CardImage = styled("div")(() => ({
   marginRight: 8,
 }));
 
+/**
+ * Styles the CardContainer
+ */
 export const CardContainer = styled("div")(() => ({
   display: "flex",
   alignItems: "center",
@@ -143,20 +188,32 @@ export const CardContainer = styled("div")(() => ({
   marginBottom: 0,
 }));
 
+/**
+ * Styles the CardImageWrapper
+ */
 export const CardImageWrapper = styled("img")(() => ({
   width: "100%",
   height: "auto",
 }));
 
+/**
+ * Styles the CardContent
+ */
 export const CardContent = styled("div")(() => ({
   flex: 1,
 }));
 
+/**
+ * Styles the CardTitle
+ */
 export const CardTitle = styled("h3")(({ theme }) => ({
   fontSize: 20,
   marginBottom: theme.spacing(2),
 }));
 
+/**
+ * Styles the CardDescription
+ */
 export const CardDescription = styled("p")(() => ({
   fontSize: 20,
   maxWidth: 490,
