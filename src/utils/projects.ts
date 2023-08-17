@@ -1,9 +1,9 @@
 /**
  * Imports images
  */
-import lightsout_img from "../assets/projects/lights-out-min_gp9gvj.png";
-import smartbrain_img from "../assets/projects/smartbrain_resp.png";
-import hangman_img from "../assets/projects/hangman3.png";
+import lightsout_img from "../assets/projects/lightsout.png";
+import smartbrain_img from "../assets/projects/smartbrain.png";
+import hangman_img from "../assets/projects/hangman.png";
 import yahtze_img from "../assets/projects/yahtzee-min_aokyls.png";
 import react_img from "../assets/react.png";
 import typescript_img from "../assets/typescript1.png";
