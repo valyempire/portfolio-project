@@ -41,7 +41,8 @@ export const projects = [
     name: "SmartBrain",
     image: smartbrain_img,
     github: "https://github.com/valyempire/smart-brain-app-react",
-    live: "https://vali-smartbrain.netlify.app",
+    live: "https://rainbow-marigold-47837b.netlify.app/",
+    // live: "https://vali-smartbrain.netlify.app",
     icons: [
       { src: react_img, alt: "REACT" },
       { src: node_img, alt: "NODE JS" },
@@ -85,6 +86,6 @@ export const projects = [
   },
 ];
 
-export const gitHubTitle = "Visit my Github profile";
+export const gitHubTitle = "See the code on my Github profile";
 
 export const liveTitle = "See my project live";
